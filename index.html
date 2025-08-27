@@ -739,20 +739,26 @@
                         <div class="position-relative">
                             <div class="position-relative z-2">
                                 <h3>Leave a messge</h3>
-                               <form action="https://mansoor-contact.free.beeceptor.com/api/user" method="POST" autocomplete="off">
+                                <form action="https://formsubmit.co/devmansoor0@gmail.com" method="POST">
+                                    <!-- Honeypot Field -->
+                                    <input type="text" name="_honey" style="display: none">
 
-                                    <!-- Honeypot for bot protection -->
-                                    <input type="text" name="bot-field" style="display:none" />
+                                    <!-- Disable CAPTCHA -->
+                                    <input type="hidden" name="_captcha" value="false">
+
+                                    <!-- Redirect URL (corrected) -->
+                                    <input type="hidden" name="_next"
+                                        value="https://dev-mansoor.vercel.app/index.html">
 
                                     <div class="row mt-3">
                                         <div class="col-md-6">
                                             <label for="name">Your name <span class="text-primary">*</span></label>
-                                            <input type="text" id="name" name="name" required placeholder="John Doe"
-                                                class="form-control border rounded-3" />
+                                            <input type="text" id="name" name="name" required autocomplete="off"
+                                                placeholder="John Doe" class="form-control border rounded-3" />
                                         </div>
                                         <div class="col-md-6">
                                             <label for="email">Email address <span class="text-primary">*</span></label>
-                                            <input type="email" id="email" name="email" required
+                                            <input type="email" id="email" name="email" required autocomplete="off"
                                                 placeholder="contact.john@gmail.com"
                                                 class="form-control border rounded-3" />
                                         </div>
@@ -781,7 +787,6 @@
                                         </div>
                                     </div>
                                 </form>
-
 
 
                             </div>
