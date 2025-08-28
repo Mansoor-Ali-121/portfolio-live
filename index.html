@@ -30,6 +30,7 @@
         rel="stylesheet" />
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
 
@@ -68,7 +69,7 @@
                                 <a class="nav-link" href="#services">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="work">Projects</a>
+                                <a class="nav-link" href="#projects">Projects</a>
                             </li>
 
                             <li class="nav-item">
@@ -148,7 +149,7 @@
             </div>
         </div>
         <div class="offCanvas__overly"></div>
-        <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar button-bg-2">
+        <!-- <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar button-bg-2">
             <div class="mobile-header-wrapper-inner">
                 <div class="mobile-header-logo">
                     <a class="d-flex main-logo align-items-center d-inline-flex" href="index.html">
@@ -199,7 +200,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
     </header>
 
@@ -405,7 +406,7 @@
             </div>
         </section>
 
-        <!-- projects 1 -->
+        <!-- projects details-->
         <div id="projects" class="section-projects-1 position-relative pt-120 pb-6 bg-900">
             <div class="container">
                 <div class="row align-items-end">
@@ -417,12 +418,6 @@
                             make me improve in satisfying my customers.
                         </span>
                     </div>
-                    <div class="col-lg-auto">
-                        <a href="work" class="btn btn-gradient mt-lg-0 mt-5 ms-lg-auto d-none d-xl-block">
-                            View All Projects
-                            <i class="ri-arrow-right-up-line"></i>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -432,89 +427,101 @@
                     <div class="button-group filter-button-group filter-menu-active">
                         <button class="btn btn-md btn-filter mb-2 me-2 text-uppercase active" data-filter="*">All
                             Projects</button>
-                        <button class="btn btn-md btn-filter mb-2 me-2 text-uppercase "
-                            data-filter=".brand">Branding</button>
-                        <button class="btn btn-md btn-filter mb-2 me-2 text-uppercase " data-filter=".webdesign">Web
-                            Design</button>
-                        <button class="btn btn-md btn-filter mb-2 me-2 text-uppercase " data-filter=".ui">UI/UX</button>
-                        <button class="btn btn-md btn-filter mb-2 me-2 text-uppercase " data-filter=".app">App
-                            Dev</button>
+
                     </div>
                 </div>
+                <!-- projects -->
                 <div class="row masonry-active justify-content-between mt-6">
                     <div class="grid-sizer"></div>
+
+                    <!-- project-1 -->
                     <div class="filter-item col-lg-6 col-12 brand ui app">
                         <div class="project-item rounded-4 overflow-hidden position-relative p-md-4 p-3 bg-white">
-                            <a href="work-single">
-                                <img class="rounded-3 w-100 zoom-img" src="assets/imgs/projects/projects-1/img-1.png"
-                                    alt="zelio" />
-                            </a>
+                            <img class="rounded-3 w-100 zoom-img clickable-image"
+                                src="assets/imgs/projects/projects-1/dailynews.png" alt="zelio" />
                             <div class="d-flex align-items-center mt-4">
-                                <a href="work-single" class="project-card-content">
-                                    <h3 class="fw-semibold">Medix (HMS)</h3>
+                                <div class="project-card-content">
+                                    <h3 class="fw-semibold">Daily 99 News</h3>
                                     <p>Bokeh network</p>
-                                </a>
-                                <a href="work-single"
-                                    class="project-card-icon icon-shape ms-auto icon-md rounded-circle">
+                                </div>
+                                <div class="project-card-icon icon-shape ms-auto icon-md rounded-circle">
                                     <i class="ri-arrow-right-up-line"></i>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="filter-item col-lg-6 col-12 webdesign brand dataanalysis brand">
+                    <!-- Image Modal -->
+                    <div id="imageModal" class="custom-modal">
+                        <span class="close-btn">&times;</span>
+                        <img class="modal-content" id="modalImage">
+                    </div>
+
+                    <!-- project-2 -->
+                    <div class="filter-item col-lg-6 col-12 brand ui app">
                         <div class="project-item rounded-4 overflow-hidden position-relative p-md-4 p-3 bg-white">
-                            <a href="work-single">
-                                <img class="rounded-3 w-100 zoom-img" src="assets/imgs/projects/projects-1/img-2.png"
-                                    alt="zelio" />
-                            </a>
+                            <img class="rounded-3 w-100 zoom-img clickable-image"
+                                src="assets/imgs/projects/projects-1/naini.png" alt="zelio" />
                             <div class="d-flex align-items-center mt-4">
-                                <a href="work-single" class="project-card-content">
-                                    <h3 class="fw-semibold">Mobile App Design</h3>
-                                    <p>Tech Innovators Inc.</p>
-                                </a>
-                                <a href="work-single"
-                                    class="project-card-icon icon-shape ms-auto icon-md rounded-circle">
+                                <div class="project-card-content">
+                                    <h3 class="fw-semibold">Naini</h3>
+                                    <p>Resturent</p>
+                                </div>
+                                <div class="project-card-icon icon-shape ms-auto icon-md rounded-circle">
                                     <i class="ri-arrow-right-up-line"></i>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="filter-item col-lg-6 col-12 ui app">
+                    <!-- Image Modal -->
+                    <div id="imageModal" class="custom-modal">
+                        <span class="close-btn">&times;</span>
+                        <img class="modal-content" id="modalImage">
+                    </div>
+
+                    <!-- project-3 -->
+                    <div class="filter-item col-lg-6 col-12 brand ui app">
                         <div class="project-item rounded-4 overflow-hidden position-relative p-md-4 p-3 bg-white">
-                            <a href="work-single">
-                                <img class="rounded-3 w-100 zoom-img" src="assets/imgs/projects/projects-1/img-3.png"
-                                    alt="zelio" />
-                            </a>
+                            <img class="rounded-3 w-100 zoom-img clickable-image"
+                                src="assets/imgs/projects/projects-1/naini.png" alt="zelio" />
                             <div class="d-flex align-items-center mt-4">
-                                <a href="work-single" class="project-card-content">
-                                    <h3 class="fw-semibold">Interaction Design</h3>
-                                    <p>HealthTrack Solutions</p>
-                                </a>
-                                <a href="work-single"
-                                    class="project-card-icon icon-shape ms-auto icon-md rounded-circle">
+                                <div class="project-card-content">
+                                    <h3 class="fw-semibold">Naini</h3>
+                                    <p>Resturent</p>
+                                </div>
+                                <div class="project-card-icon icon-shape ms-auto icon-md rounded-circle">
                                     <i class="ri-arrow-right-up-line"></i>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="filter-item col-lg-6 col-12 app app dataanalysis brand">
+                    <!-- Image Modal -->
+                    <div id="imageModal" class="custom-modal">
+                        <span class="close-btn">&times;</span>
+                        <img class="modal-content" id="modalImage">
+                    </div>
+
+                    <!-- project-4  -->
+                    <div class="filter-item col-lg-6 col-12 brand ui app">
                         <div class="project-item rounded-4 overflow-hidden position-relative p-md-4 p-3 bg-white">
-                            <a href="work-single">
-                                <img class="rounded-3 w-100 zoom-img" src="assets/imgs/projects/projects-1/img-4.png"
-                                    alt="zelio" />
-                            </a>
+                            <img class="rounded-3 w-100 zoom-img clickable-image h-100"
+                                src="assets/imgs/projects/projects-1/naini.png" alt="zelio" />
                             <div class="d-flex align-items-center mt-4">
-                                <a href="work-single" class="project-card-content">
-                                    <h3 class="fw-semibold">Design Consultation</h3>
-                                    <p>Creative Pulse Studios</p>
-                                </a>
-                                <a href="work-single"
-                                    class="project-card-icon icon-shape ms-auto icon-md rounded-circle">
+                                <div class="project-card-content">
+                                    <h3 class="fw-semibold">Naini</h3>
+                                    <p>Resturent</p>
+                                </div>
+                                <div class="project-card-icon icon-shape ms-auto icon-md rounded-circle">
                                     <i class="ri-arrow-right-up-line"></i>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Image Modal -->
+                    <div id="imageModal" class="custom-modal">
+                        <span class="close-btn">&times;</span>
+                        <img class="modal-content" id="modalImage">
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -747,34 +754,38 @@
                                     <input type="hidden" name="_captcha" value="false">
 
                                     <!-- Redirect URL (corrected) -->
-                                    <input type="hidden" name="_next"
-                                        value="https://dev-mansoor.vercel.app/index.html">
+                                    <input type="hidden" name="_next" value="https://dev-mansoor.vercel.app/index.html">
 
                                     <div class="row mt-3">
                                         <div class="col-md-6">
-                                            <label for="name">Your name <span class="text-primary">*</span></label>
+                                            <label for="name" class="text-secondary">Your name <span
+                                                    class="text-primary">*</span></label>
                                             <input type="text" id="name" name="name" required autocomplete="off"
                                                 placeholder="John Doe" class="form-control border rounded-3" />
                                         </div>
                                         <div class="col-md-6">
-                                            <label for="email">Email address <span class="text-primary">*</span></label>
+                                            <label for="email" class="text-secondary">Email address <span
+                                                    class="text-primary">*</span></label>
                                             <input type="email" id="email" name="email" required autocomplete="off"
                                                 placeholder="contact.john@gmail.com"
                                                 class="form-control border rounded-3" />
                                         </div>
                                         <div class="col-md-6">
-                                            <label for="phone">Your phone <span class="text-primary">*</span></label>
+                                            <label for="phone" class="text-secondary">Your phone <span
+                                                    class="text-primary">*</span></label>
                                             <input type="text" id="phone" name="phone" required
                                                 placeholder="+01 234 567 89" class="form-control border rounded-3" />
                                         </div>
                                         <div class="col-md-6">
-                                            <label for="subject">Subject <span class="text-primary">*</span></label>
+                                            <label for="subject" class="text-secondary">Subject <span
+                                                    class="text-primary">*</span></label>
                                             <input type="text" id="subject" name="subject" required
                                                 placeholder="I want to contact for..."
                                                 class="form-control border rounded-3" />
                                         </div>
                                         <div class="col-12">
-                                            <label for="message">Message <span class="text-primary">*</span></label>
+                                            <label for="message" class="text-secondary">Message <span
+                                                    class="text-primary">*</span></label>
                                             <textarea id="message" name="message" required
                                                 placeholder="Your message here..."
                                                 class="form-control border rounded-3 pb-10"></textarea>
@@ -852,6 +863,31 @@
     <script src="assets/js/vendors/aat.min.js"></script>
     <!-- Theme JS -->
     <script src="assets/js/main.js"></script>
+
+    <!-- project  image  view  -->
+    <script>
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImage");
+        const closeBtn = document.querySelector(".close-btn");
+
+        document.querySelectorAll(".clickable-image").forEach(img => {
+            img.addEventListener("click", function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+            });
+        });
+
+        closeBtn.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // Optional: Close modal if user clicks outside image
+        modal.onclick = function (e) {
+            if (e.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 
 </body>
 
