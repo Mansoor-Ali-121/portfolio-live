@@ -28,3 +28,8 @@
     font-weight: bold;
     cursor: pointer;
 }
+
+/* img height */
+.project-item > img{
+    height: 263px !important;
+}
