@@ -1,5 +1,13 @@
 /* Custom Modal Styles */
 
+.project-item img {
+    width: 100%;
+    height: 300px !important;
+    object-fit: cover;
+    /* border-radius: 8px; */
+
+}
+
 /* Modal Container: Pura screen cover kare aur content ko center mein laye */
 .custom-modal {
     display: none; /* Default hidden */
@@ -59,14 +67,82 @@
 /* Phone Screen ya Chote devices ke liye (Max width 600px) */
 @media only screen and (max-width: 600px) {
     .modal-content {
-        width: 100%; /* Chote screens par poori width le */
+        width: 100%; 
         max-width: 100%;
-        max-height: 80vh; /* Thodi si jagah upar-neeche chhodein */
+        max-height: 80vh; 
+    }
+    
+    /* ✅ FIX 1: Image ko poori width do aur height auto rakho */
+    .project-item img {
+        width: 100% !important;
+        max-width: 100% !important; /* Zaroori hai taki image apne parent se bahar na nikle */
+        height: auto !important; /* Aspect ratio maintain karne ke liye */
+        display: block; /* Agar inline element ho to */
+        object-fit: cover; /* Agar container mein fit karna ho to */
     }
     
     .close-btn {
         top: 10px;
         right: 15px;
-        font-size: 30px; /* Chote screens par thoda chota button */
+        font-size: 30px;
     }
+}
+
+
+/* ================================================= */
+/* 🚀 FINAL WORKING CODE: MARQUEE MOVEMENT + GLOW ANIMATION */
+/* ================================================= */
+
+/* Keyframes: Shadow Pulse (Yeh glow/chamak ko animate karega) */
+@keyframes shadowPulse {
+    0%, 100% {
+        /* Halka Glow */
+        text-shadow: 
+            0 0 5px #8834ff, 
+            0 0 15px #512cc1; 
+        opacity: 0.95;
+    }
+    50% {
+        /* Tez/Bright Glow (Aapke naye colors) */
+        text-shadow: 
+            0 0 5px #d0c6d8,  /* Bright White Center Glow */
+            0 0 10px #ceadfc,
+            0 0 0px #f0eff1; 
+        opacity: 1;
+    }
+}
+
+/* Text Styling: Glow Animation, Color, aur Outline */
+.scroll-move-right .stroke span {
+    
+    /* 1. Color Fill: Text ko transparent kiya taki sirf glow dikhe */
+    color: transparent !important; /* <--- Text Fill Transparent */
+    background-clip: text;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent !important; /* <--- Ensure transparent fill */
+    
+    /* 2. Stroke (Outline) */
+    -webkit-text-stroke: 1px #494f50 !important;
+    
+    /* 3. GLOW EFFECT: Animated ShadowPulse lagaya */
+    text-shadow: none; /* Static shadow hata diya */
+    animation: shadowPulse 4s ease-in-out infinite alternate !important; /* <--- GLOW ANIMATION ACTIVE */
+    
+    display: inline-block;
+    white-space: nowrap; 
+}
+
+/* Container Fixes (Marquee Functionality ke liye zaroori) */
+.scroll-move-right {
+    /* Yeh properties Marquee ko poori screen par move karne ke liye zaroori hain */
+    width: 100vw !important; /* Poori viewport width */
+    left: 0 !important; /* Left edge se shuru karein */
+    transform: none !important; /* Centering transform hata diya */
+    overflow: hidden !important;
+}
+
+/* Marquee tag par koi extra margin ya padding na ho */
+.scroll-move-right marquee {
+    margin: 0;
+    padding: 0;
 }

@@ -792,12 +792,15 @@
                     </div>
                 </div>
             </div>
-            <div
-                class="scroll-move-right position-absolute bottom-0 start-50 translate-middle-x bg-900 overflow-hidden">
-                <div class="wow img-custom-anim-top">
-                    <h3 class="stroke fs-280 text-lowercase text-900 mb-0 lh-1">Mansoor</h3>
-                </div>
-            </div>
+           <div class="scroll-move-right position-absolute bottom-0 bg-900 overflow-hidden">
+    <div class="wow img-custom-anim-top">
+        <h3 class="stroke fs-280 text-lowercase text-900 mb-0 lh-1">
+            <marquee behavior="scroll" direction="left" scrollamount="10">
+                <span>Mansoor</span>
+            </marquee>
+        </h3>
+    </div>
+</div>
         </section>
 
     </main>
@@ -853,34 +856,88 @@
     <script src="assets/js/main.js"></script>
 
     <!-- project  image  view  -->
-   <script>
-    const modal = document.getElementById("imageModal");
-    const modalImg = document.getElementById("modalImage");
-    const closeBtn = document.querySelector(".close-btn");
+    <script>
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImage");
+        const closeBtn = document.querySelector(".close-btn");
 
-    // Har uss image ko sunna (listen) jo "clickable-image" class rakhti hai
-    document.querySelectorAll(".clickable-image").forEach(img => {
-        img.addEventListener("click", function () {
-            modal.style.display = "flex"; // CSS mein display: flex set kiya tha
-            modalImg.src = this.src;
+        // Har uss image ko sunna (listen) jo "clickable-image" class rakhti hai
+        document.querySelectorAll(".clickable-image").forEach(img => {
+            img.addEventListener("click", function () {
+                modal.style.display = "flex"; // CSS mein display: flex set kiya tha
+                modalImg.src = this.src;
+            });
         });
-    });
 
-    // Close button click karne par modal band karein
-    closeBtn.onclick = function () {
-        modal.style.display = "none";
-    }
-
-    // Modal ke bahar click karne par band karein
-    modal.onclick = function (e) {
-        if (e.target === modal) {
+        // Close button click karne par modal band karein
+        closeBtn.onclick = function () {
             modal.style.display = "none";
         }
-    }
-</script>
+
+        // Modal ke bahar click karne par band karein
+        modal.onclick = function (e) {
+            if (e.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 
 </body>
 
 <!-- Mirrored from zelio-html-demo.vercel.app/index-1 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 20 Jul 2025 11:50:06 GMT -->
+
+<!-- Menubar js  -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+        // 1. Mobile Menu Container aur Links ko pakdein
+        const mobileMenuContainer = document.querySelector('.mobile-header-active');
+        const mobileLinks = document.querySelectorAll('.mobile-menu a[href^="#"]'); // Sirf hash links (#services, #projects)
+
+        // 2. Hamburger icon (jise aap toggle karte hain) ko pakdein
+        // Kyunki aap '.burger-icon' use kar rahe hain, isko click karne se hi menu ki state badalti hai.
+        const burgerIcon = document.querySelector('.mobile-header-wrapper-inner .burger-icon');
+
+        // 3. Har hash link par click listener lagayein
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                // Check karein ki kya menu is waqt active (khula hua) hai
+                // (Aam taur par, 'mobile-header-active' class ke saath 'active' ya 'show' jaisi koi class toggle hoti hai)
+
+                // Assuming ki jab menu khula hota hai, toh .mobile-header-active mein 'active' class hoti hai 
+                // ya body/html mein koi class hoti hai.
+
+                // Sabse aasan tareeka hai burger icon ko programmatic tareeke se click karna:
+                if (burgerIcon) {
+                    // Agar menu khula hai, toh isko dobara click karne se band ho jayega.
+                    burgerIcon.click();
+                } else if (mobileMenuContainer) {
+                    // Ya phir, agar aapne koi custom class di hai menu ko hide karne ke liye, use remove karein.
+                    mobileMenuContainer.classList.remove('active'); // Agar 'active' class menu kholti hai.
+                }
+
+                // Agar aapke menu ko kholne/band karne ke liye koi aur mechanism hai (jaise body par class), 
+                // to us class ko bhi yahan remove karna padega.
+            });
+        });
+
+        // --- OffCanvas Menu Fix (Agar aap ise bhi use kar rahe hain) ---
+        const offCanvasLinks = document.querySelectorAll('.offCanvas__info a[href^="#"]');
+        const offCanvasCloseBtn = document.querySelector('.offCanvas__close-icon button'); // Ya koi aur close button
+
+        offCanvasLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                if (offCanvasCloseBtn) {
+                    offCanvasCloseBtn.click();
+                } else {
+                    // Agar koi close button na ho to manually classes remove karein
+                    document.querySelector('.offCanvas__info').classList.remove('active'); // Example class
+                    document.querySelector('.offCanvas__overly').classList.remove('active'); // Example class
+                }
+            });
+        });
+
+    });
+</script>
 
 </html>

@@ -1,13 +1,18 @@
 (function ($) {
     'use strict';
+    
+    // === 1. GLOBAL VARIABLE FOR ISOTOPE/MASONRY ===
+    // Isko function ke andar se bahar move kiya gaya hai taaki resize function access kar sake.
+    let $grid; 
+
     /*=============================================
-	=              Preloader       =
+    =           Preloader           =
     =============================================*/
     function preloader() {
         $('#preloader').delay(0).fadeOut();
     }
     /*=============================================
-    =     Offcanvas Menu      =
+    =           Offcanvas Menu          =
     =============================================*/
     function offcanvasMenu() {
         $('.menu-tigger').on('click', function () {
@@ -19,7 +24,7 @@
         });
     }
     /*=============================================
-	=          Data Background      =
+    =           Data Background         =
     =============================================*/
     function dataBackground() {
         $('[data-background]').each(function () {
@@ -27,7 +32,7 @@
         });
     }
     /*=============================================
-	=           Go to top       =
+    =           Go to top           =
     =============================================*/
     function progressPageLoad() {
         var progressWrap = document.querySelector('.btn-scroll-top');
@@ -63,7 +68,7 @@
         }
     }
     /*=============================================
-	=           Aos Active       =
+    =           Aos Active          =
     =============================================*/
     function aosAnimation() {
         AOS.init({
@@ -74,7 +79,7 @@
         });
     }
     /*=============================================
-	=           counterState       =
+    =           counterState          =
     =============================================*/
     function counterState() {
         var counters = document.querySelectorAll('.counter');
@@ -95,7 +100,7 @@
         });
     }
     /*=============================================
-	=    		Magnific Popup		      =
+    =           Magnific Popup              =
     =============================================*/
     function magnificPopup() {
         $('.popup-image').magnificPopup({
@@ -110,7 +115,7 @@
         });
     }
     /*=============================================
-	=    		 Wow Active  	         =
+    =           Wow Active              =
     =============================================*/
     function wowAnimation() {
         var wow = new WOW({
@@ -123,19 +128,20 @@
         wow.init();
     }
     /*=============================================
-	=           masonry Active       =
+    =           masonry Active (ISOTOPE INITIALIZATION)          =
     =============================================*/
     function masonryFillter() {
+        // ImagesLoaded wait karta hai ki saari images load ho jayein
         $('.masonry-active').imagesLoaded(function () {
             var $filter = '.masonry-active',
                 $filterItem = '.filter-item',
                 $filterMenu = '.filter-menu-active';
             if ($($filter).length > 0) {
-                var $grid = $($filter).isotope({
+                // $grid ko ab global variable mein assign kiya jaa raha hai
+                $grid = $($filter).isotope({
                     itemSelector: $filterItem,
                     filter: '*',
                     masonry: {
-                        // use outer width of grid-sizer for columnWidth
                         // columnWidth: 1,
                         columnWidth: '.grid-sizer',
                     },
@@ -156,6 +162,19 @@
             }
         });
     }
+
+    // --- 2. WINDOW RESIZE FIX (Optimization for Layout) ---
+    // Screen resize hone par Isotope layout ko dobara calculate karein
+    $(window).on('resize', function() {
+        // Isotope ko dobara layout set karne ko kehta hai (thode delay ke saath)
+        if ($grid) {
+            setTimeout(function() {
+                $grid.isotope('layout');
+            }, 200); 
+        }
+    });
+    // --- End of Resize Fix ---
+
     function customSwiper() {
         const sliderone = new Swiper('.slider-one', {
             slidesPerView: 2,
@@ -420,7 +439,7 @@
         }
     }
     /*=============================================
-	=           Page Load       =
+    =           Page Load           =
     =============================================*/
     $(window).on('load', function () {
         preloader();
@@ -438,5 +457,12 @@
         inputFocus();
         mobileHeaderActive();
         cardScroll();
+        
+        // Final fallback to fix layout after 500ms when everything is fully settled
+        setTimeout(function() {
+            if ($grid) {
+                $grid.isotope('layout');
+            }
+        }, 500);
     });
 })(jQuery);
