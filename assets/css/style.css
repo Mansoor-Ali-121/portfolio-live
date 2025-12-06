@@ -146,3 +146,42 @@
     margin: 0;
     padding: 0;
 }
+
+
+/* -------------------------------------- */
+/* 1. DARK MODE STYLING (Jab body par .dark class ho) */
+/* -------------------------------------- */
+
+body.dark .footer-social-icon {
+    /* i tags ka rang */
+    color: #ffffff; 
+    /* is line ko hata dein ya isi tarah rehne dein, hum isko neechay fix karenge */
+    transition: color 0.3s, fill 0.3s;
+}
+
+/* Yahaan HUM SVG ko alag se TARGET kar rahe hain taake woh zaroor safed ho */
+body.dark .footer-social-icon[fill],
+body.dark svg.footer-social-icon { 
+    fill: #ffffff !important; 
+}
+
+/* Dark Mode Hover Effect */
+body.dark .d-flex a:hover .footer-social-icon {
+    color: #7d60f9 !important;
+    fill: #7d60f9 !important;
+}
+
+/* -------------------------------------- */
+/* 2. LIGHT MODE STYLING (Theek kaam kar raha hai) */
+/* -------------------------------------- */
+body.light .footer-social-icon {
+    color: #000000 !important;
+    fill: #000000 !important;
+    transition: color 0.3s, fill 0.3s;
+}
+
+/* Light Mode Hover Effect */
+body.light .d-flex a:hover .footer-social-icon {
+    color: #7d60f9 !important;
+    fill: #7d60f9 !important;
+}
