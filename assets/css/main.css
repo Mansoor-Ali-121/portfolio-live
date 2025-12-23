@@ -4054,7 +4054,7 @@ Preloader
 }
 
 .masonry-active .filter-item .project-item .project-card-content:hover h3 {
-  color: var(--tc-theme-primary-1);
+ color: #8a6ffe !important;
 }
 
 .masonry-active .filter-item .project-item .project-card-icon {

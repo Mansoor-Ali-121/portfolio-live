@@ -185,3 +185,7 @@ body.light .d-flex a:hover .footer-social-icon {
     color: #7d60f9 !important;
     fill: #7d60f9 !important;
 }
+
+.visible-color{
+    color: #8a6ffe !important;
+}
