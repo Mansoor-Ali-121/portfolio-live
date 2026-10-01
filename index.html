@@ -164,48 +164,53 @@
 
     </div>
 
-    <!-- Mobile Dropdown Navigation (Simple & 100% Reliable) -->
+    <!-- Mobile Dropdown Navigation (Fixed Spacing & Scrolling) -->
     <div id="mobile-menu"
-      class="hidden md:hidden border-b border-zinc-800 bg-[#0d0f1e] px-4 py-4 space-y-2.5 shadow-2xl">
+      class="hidden md:hidden border-b border-zinc-800 bg-[#0d0f1e] px-4 py-5 space-y-3 shadow-2xl max-h-[80vh] overflow-y-auto">
+
+      <!-- Navigation Links -->
       <a href="#about"
-        class="mobile-nav-link block text-sm font-medium text-zinc-300 hover:text-white py-2 px-2 rounded hover:bg-zinc-800/50 transition-colors">About</a>
+        class="mobile-nav-link block text-sm font-medium text-zinc-300 hover:text-white py-2 px-2.5 rounded-md hover:bg-zinc-800/60 transition-colors">About</a>
       <a href="#stats-dashboard"
-        class="mobile-nav-link block text-sm font-medium text-emerald-400 hover:text-white py-2 px-2 rounded hover:bg-zinc-800/50 transition-colors">Live
+        class="mobile-nav-link block text-sm font-medium text-emerald-400 hover:text-white py-2 px-2.5 rounded-md hover:bg-zinc-800/60 transition-colors">Live
         Dynamic Stats</a>
       <a href="#skills"
-        class="mobile-nav-link block text-sm font-medium text-cyan-400 hover:text-white py-2 px-2 rounded hover:bg-zinc-800/50 transition-colors">Core
+        class="mobile-nav-link block text-sm font-medium text-cyan-400 hover:text-white py-2 px-2.5 rounded-md hover:bg-zinc-800/60 transition-colors">Core
         Skills</a>
       <a href="#projects"
-        class="mobile-nav-link block text-sm font-medium text-zinc-300 hover:text-white py-2 px-2 rounded hover:bg-zinc-800/50 transition-colors">Projects</a>
+        class="mobile-nav-link block text-sm font-medium text-zinc-300 hover:text-white py-2 px-2.5 rounded-md hover:bg-zinc-800/60 transition-colors">Projects</a>
       <a href="#experience"
-        class="mobile-nav-link block text-sm font-medium text-zinc-300 hover:text-white py-2 px-2 rounded hover:bg-zinc-800/50 transition-colors">Experience</a>
+        class="mobile-nav-link block text-sm font-medium text-zinc-300 hover:text-white py-2 px-2.5 rounded-md hover:bg-zinc-800/60 transition-colors">Experience</a>
       <a href="#testimonials"
-        class="mobile-nav-link block text-sm font-medium text-zinc-300 hover:text-white py-2 px-2 rounded hover:bg-zinc-800/50 transition-colors">Client
+        class="mobile-nav-link block text-sm font-medium text-zinc-300 hover:text-white py-2 px-2.5 rounded-md hover:bg-zinc-800/60 transition-colors">Client
         Testimonials</a>
 
-      <!-- Moved Actions Inside Mobile Menu -->
-      <div class="pt-3 border-t border-zinc-800 flex flex-col gap-2.5">
-        <div class="flex items-center justify-between px-2 py-1">
-          <span class="text-xs text-zinc-400">Social Profiles:</span>
-          <div class="flex items-center gap-3">
-            <a href="https://github.com/Mansoor-Ali-121" target="_blank" rel="noopener noreferrer"
-              class="text-zinc-300 hover:text-white text-xs">GitHub</a>
-            <span class="text-zinc-600">|</span>
-            <a href="https://linkedin.com/in/mansoor-ali-184ba0303" target="_blank" rel="noopener noreferrer"
-              class="text-zinc-300 hover:text-cyan-400 text-xs">LinkedIn</a>
-          </div>
+      <!-- Divider -->
+      <div class="pt-2 border-t border-zinc-800"></div>
+
+      <!-- Social Profiles (Clearly Visible Row) -->
+      <div class="flex items-center justify-between px-2.5 py-2 bg-zinc-900/60 rounded-md border border-zinc-800/80">
+        <span class="text-xs text-zinc-400 font-medium">Social Profiles:</span>
+        <div class="flex items-center gap-3">
+          <a href="https://github.com/Mansoor-Ali-121" target="_blank" rel="noopener noreferrer"
+            class="text-zinc-300 hover:text-white text-xs font-semibold px-2 py-1 bg-zinc-800 rounded">GitHub</a>
+          <a href="https://linkedin.com/in/mansoor-ali-184ba0303" target="_blank" rel="noopener noreferrer"
+            class="text-zinc-300 hover:text-cyan-400 text-xs font-semibold px-2 py-1 bg-zinc-800 rounded">LinkedIn</a>
         </div>
-
-        <button type="button"
-          class="open-resume-btn mobile-nav-link text-left w-full text-sm font-semibold text-emerald-400 hover:text-emerald-300 py-2.5 px-2.5 rounded-md bg-zinc-900 border border-zinc-800">
-          📄 Open Full Resume
-        </button>
-
-        <a href="#contact"
-          class="mobile-nav-link block text-center text-sm font-bold text-zinc-950 bg-gradient-to-r from-emerald-400 to-teal-400 py-2.5 px-3 rounded-md shadow-md">
-          Get in Touch / Contact
-        </a>
       </div>
+
+      <!-- Resume Button -->
+      <button type="button"
+        class="open-resume-btn mobile-nav-link text-left w-full text-sm font-semibold text-emerald-400 hover:text-emerald-300 py-2.5 px-3 rounded-md bg-zinc-900 border border-zinc-800 shadow-sm flex items-center justify-between">
+        <span>📄 Open Full Resume</span>
+        <span class="text-xs text-zinc-500">View</span>
+      </button>
+
+      <!-- Contact Button -->
+      <a href="#contact"
+        class="mobile-nav-link block text-center text-sm font-bold text-zinc-950 bg-gradient-to-r from-emerald-400 to-teal-400 py-3 px-3 rounded-md shadow-md">
+        Get in Touch / Contact
+      </a>
     </div>
   </header>
 
@@ -1964,7 +1969,8 @@
             <div>Email: devmansoor0@gmail.com</div>
             <div>GitHub: <a href="https://github.com/Mansoor-Ali-121" target="_blank" rel="noopener noreferrer"
                 class="text-emerald-400 hover:underline">github.com/Mansoor-Ali-121</a></div>
-            <div>LinkedIn: <a href="https://linkedin.com/in/mansoor-ali-184ba0303" target="_blank" rel="noopener noreferrer"
+            <div>LinkedIn: <a href="https://linkedin.com/in/mansoor-ali-184ba0303" target="_blank"
+                rel="noopener noreferrer"
                 class="text-cyan-400 hover:underline">linkedin.com/in/mansoor-ali-184ba0303</a></div>
             <div>Experience: 2+ Years Production · Remote Worldwide</div>
           </div>
