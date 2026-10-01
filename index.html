@@ -1,0 +1,1697 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Mansoor — Full Stack Web Developer | Laravel & Modern UI</title>
+    <meta name="description" content="Official portfolio of Dev Mansoor (Mansoor Ali), Full Stack Web Developer specializing in building responsive and dynamic Laravel applications, PHP, MySQL, Bootstrap & Tailwind CSS." />
+    <meta name="keywords" content="Dev Mansoor, Mansoor Ali, Full Stack Web Developer, Laravel Developer, PHP, MySQL, Tailwind CSS, Bootstrap, HTML, CSS, JavaScript, REST APIs, Web Developer Portfolio" />
+    <meta name="author" content="Dev Mansoor (Mansoor Ali)" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- OpenGraph Metadata -->
+    <meta property="og:site_name" content="Dev Mansoor Portfolio" />
+    <meta property="og:title" content="Dev Mansoor — Full Stack Laravel Web Developer" />
+    <meta property="og:description" content="Professional portfolio and resume of Dev Mansoor (Mansoor Ali), Full Stack Web Developer with 2+ years of production experience in Laravel, PHP, and modern UI engineering." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/src/assets/images/mansoor_ali_profile_1790872776875.jpg" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dev Mansoor — Full Stack Laravel Web Developer" />
+    <meta name="twitter:description" content="Professional portfolio and resume of Dev Mansoor (Mansoor Ali), Full Stack Web Developer with 2+ years of production experience." />
+    <meta name="twitter:image" content="/src/assets/images/mansoor_ali_profile_1790872776875.jpg" />
+
+    <!-- Schema.org JSON-LD Structured Data for Dev Mansoor -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Dev Mansoor",
+      "alternateName": "Mansoor Ali",
+      "jobTitle": "Full Stack Web Developer",
+      "email": "killerdon3942@gmail.com",
+      "sameAs": [
+        "https://github.com/MansoorAli-Dev",
+        "https://linkedin.com/in/devmansoor"
+      ],
+      "knowsAbout": [
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "Tailwind CSS",
+        "PHP",
+        "Laravel",
+        "MySQL",
+        "REST APIs"
+      ],
+      "description": "Full Stack Web Developer specializing in building responsive and dynamic applications in Laravel with two years plus of experience."
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body class="bg-[#070814] text-zinc-100 antialiased selection:bg-emerald-500/30 selection:text-emerald-200 relative overflow-x-hidden">
+
+    <!-- Attractive Custom Neon Glow Cursor Elements -->
+    <div id="custom-cursor-dot" class="pointer-events-none"></div>
+    <div id="custom-cursor-ring" class="pointer-events-none"></div>
+
+    <!-- Modern Atomic Preloader -->
+    <div id="preloader" class="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-[#070814] select-none">
+      <div class="relative w-20 h-20 flex items-center justify-center mb-4">
+        <div class="absolute inset-0 rounded-full border border-emerald-500/40 animate-atom-ring-1"></div>
+        <div class="absolute inset-2 rounded-full border border-cyan-400/40 animate-atom-ring-2"></div>
+        <div class="absolute inset-4 rounded-full border border-rose-500/40 animate-atom-ring-3"></div>
+        <div class="w-3.5 h-3.5 rounded-full bg-gradient-to-r from-emerald-400 to-cyan-400 shadow-lg shadow-emerald-500/50"></div>
+      </div>
+      <div class="text-sm font-bold tracking-wider text-white flex items-center gap-1.5 font-mono">
+        <span>DEV MANSOOR</span>
+        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+      </div>
+      <div class="text-[11px] text-zinc-400 mt-1 font-mono">Loading Dynamic Portfolio...</div>
+    </div>
+
+    <!-- Animated Background Atom Particles Canvas -->
+    <canvas id="atom-particles-canvas" class="fixed inset-0 pointer-events-none z-0"></canvas>
+
+    <!-- Interactive Desktop Mouse Spotlight -->
+    <div class="spotlight-overlay fixed inset-0 z-30 pointer-events-none transition-opacity duration-300"></div>
+
+    <!-- Top Navigation Bar (Strict 3-Zone Contract) -->
+    <header class="sticky top-0 z-40 w-full border-b border-white/10 bg-[#070814]/85 backdrop-blur-xl">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        
+        <!-- Zone 1: Single text element wordmark with colorful gradient dot -->
+        <a href="#hero" class="text-lg font-bold tracking-tight text-white hover:text-emerald-400 transition-colors flex items-center gap-2">
+          <span>Dev Mansoor</span>
+          <span class="w-2 h-2 rounded-full bg-gradient-to-r from-emerald-400 to-cyan-400 animate-pulse"></span>
+        </a>
+
+        <!-- Zone 2: Clean text navigation links with active scrollspy indicators -->
+        <nav class="hidden md:flex items-center gap-3 lg:gap-5 text-sm font-medium text-zinc-300">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#stats-dashboard" class="nav-link">Live Stats</a>
+          <a href="#skills" class="nav-link">Core Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#testimonials" class="nav-link">Testimonials</a>
+          <a href="#resume" class="nav-link open-resume-btn">Resume</a>
+        </nav>
+
+        <!-- Zone 3: 1-2 Primary actions with GitHub, LinkedIn and contact -->
+        <div class="flex items-center gap-2.5">
+          <!-- Social Icons for GitHub and LinkedIn -->
+          <a href="https://github.com/MansoorAli-Dev" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="p-2 text-zinc-400 hover:text-white hover:bg-zinc-800/80 rounded-md transition-colors" title="GitHub Profile">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/devmansoor" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="p-2 text-zinc-400 hover:text-cyan-400 hover:bg-zinc-800/80 rounded-md transition-colors" title="LinkedIn Profile">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+          </a>
+
+          <button type="button" class="open-resume-btn hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-zinc-200 bg-zinc-900/90 border border-zinc-700/80 rounded-md hover:bg-zinc-800 hover:text-white transition-all whitespace-nowrap shadow-sm">
+            <span>Resume</span>
+          </button>
+          
+          <a href="#contact" class="inline-flex items-center justify-center px-3.5 py-1.5 text-xs font-semibold text-zinc-950 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-md hover:from-emerald-300 hover:to-teal-300 transition-all whitespace-nowrap shadow-md shadow-emerald-500/20 font-bold">
+            <span>Contact</span>
+          </a>
+
+          <!-- Mobile Menu Hamburger Button -->
+          <button id="mobile-menu-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation menu" class="md:hidden p-2 text-zinc-300 hover:text-white hover:bg-zinc-800/60 rounded-md transition-colors">
+            <svg id="hamburger-open-icon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            <svg id="hamburger-close-icon" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Mobile Dropdown Navigation -->
+      <div id="mobile-menu" class="hidden md:hidden border-b border-zinc-800 bg-[#0d0f1e] px-4 py-4 space-y-2">
+        <a href="#about" class="mobile-nav-link block text-sm font-medium text-zinc-300 hover:text-white py-1.5 px-2 rounded">About</a>
+        <a href="#stats-dashboard" class="mobile-nav-link block text-sm font-medium text-emerald-400 hover:text-white py-1.5 px-2 rounded">Live Dynamic Stats</a>
+        <a href="#skills" class="mobile-nav-link block text-sm font-medium text-cyan-400 hover:text-white py-1.5 px-2 rounded">Core Skills</a>
+        <a href="#projects" class="mobile-nav-link block text-sm font-medium text-zinc-300 hover:text-white py-1.5 px-2 rounded">Projects</a>
+        <a href="#experience" class="mobile-nav-link block text-sm font-medium text-zinc-300 hover:text-white py-1.5 px-2 rounded">Experience</a>
+        <a href="#testimonials" class="mobile-nav-link block text-sm font-medium text-zinc-300 hover:text-white py-1.5 px-2 rounded">Client Testimonials</a>
+        <button type="button" class="open-resume-btn mobile-nav-link text-left w-full text-sm font-medium text-emerald-400 hover:text-emerald-300 py-1.5 px-2 rounded">Open Full Resume</button>
+        <a href="#contact" class="mobile-nav-link block text-sm font-medium text-zinc-300 hover:text-white py-1.5 px-2 rounded">Contact Inquiry</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section (Colorful Animated Background & Floating Highlights) -->
+      <section id="hero" class="relative pt-12 pb-16 md:pt-20 md:pb-24 border-b border-white/10 colorful-hero-bg overflow-hidden">
+        
+        <!-- Colorful Floating Ambient Light Orbs -->
+        <div class="animate-aurora-1 absolute -top-24 left-10 w-96 h-96 bg-indigo-600/30 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="animate-aurora-2 absolute top-1/4 right-0 w-[450px] h-[450px] bg-emerald-500/25 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="animate-aurora-1 absolute bottom-0 left-1/3 w-[500px] h-[500px] bg-rose-600/20 rounded-full blur-[130px] pointer-events-none" style="animation-delay: 4s;"></div>
+        <div class="absolute -bottom-32 right-1/4 w-80 h-80 bg-cyan-500/20 rounded-full blur-[90px] pointer-events-none"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+            
+            <!-- Left Column: Typography & Intent -->
+            <div class="lg:col-span-7 space-y-6">
+              
+              <!-- Clean unboxed kicker with metadata separator and shimmer effect -->
+              <div class="reveal-init inline-flex items-center gap-2 text-xs font-semibold px-3 py-1.5 rounded-full border border-emerald-500/40 bg-emerald-950/40 text-emerald-300 shadow-lg shadow-emerald-900/20">
+                <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>Full Stack Laravel Developer</span>
+                <span aria-hidden="true" class="text-emerald-600">·</span>
+                <span>PHP &amp; Modern UI Specialist</span>
+                <span aria-hidden="true" class="text-emerald-600">·</span>
+                <span>2+ Years Experience</span>
+              </div>
+
+              <h1 class="reveal-init delay-100 text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-[1.14]" style="text-wrap: balance;">
+                Building <span id="hero-typewriter-text" class="gradient-text-vibrant">Laravel Web Applications</span><span class="typewriter-cursor"></span>
+              </h1>
+
+              <p class="reveal-init delay-200 text-base sm:text-lg text-zinc-300 leading-relaxed max-w-2xl">
+                I am <span class="text-white font-bold">Dev Mansoor (Mansoor Ali)</span>, specializing in building responsive, scalable applications with <span class="text-rose-400 font-semibold">Laravel</span>, <span class="text-indigo-400 font-semibold">PHP</span>, <span class="text-cyan-400 font-semibold">Tailwind CSS</span>, <span class="text-purple-400 font-semibold">Bootstrap</span>, and <span class="text-emerald-400 font-semibold">MySQL</span>.
+              </p>
+
+              <!-- Colorful Stack Badges -->
+              <div class="reveal-init delay-200 flex flex-wrap items-center gap-2 text-xs font-mono">
+                <span class="px-3 py-1 bg-rose-950/60 border border-rose-500/40 text-rose-300 rounded-md font-semibold shadow-sm">Laravel 11</span>
+                <span class="px-3 py-1 bg-indigo-950/60 border border-indigo-500/40 text-indigo-300 rounded-md font-semibold shadow-sm">PHP 8+</span>
+                <span class="px-3 py-1 bg-emerald-950/60 border border-emerald-500/40 text-emerald-300 rounded-md font-semibold shadow-sm">MySQL</span>
+                <span class="px-3 py-1 bg-cyan-950/60 border border-cyan-500/40 text-cyan-300 rounded-md font-semibold shadow-sm">Tailwind CSS</span>
+                <span class="px-3 py-1 bg-purple-950/60 border border-purple-500/40 text-purple-300 rounded-md font-semibold shadow-sm">Bootstrap 5</span>
+                <span class="px-3 py-1 bg-orange-950/60 border border-orange-500/40 text-orange-300 rounded-md font-semibold shadow-sm">HTML5 &amp; CSS3</span>
+              </div>
+
+              <!-- Action buttons & GitHub / LinkedIn social links -->
+              <div class="reveal-init delay-300 flex flex-wrap items-center gap-3 pt-2">
+                <a href="#projects" class="px-5 py-2.5 text-sm font-bold text-zinc-950 bg-gradient-to-r from-emerald-400 to-teal-300 rounded-md hover:from-emerald-300 hover:to-teal-200 transition-all shadow-lg shadow-emerald-500/30 hover:scale-105 inline-flex items-center gap-2">
+                  <span>Explore Projects</span>
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </a>
+
+                <a href="https://github.com/MansoorAli-Dev" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 text-sm font-semibold text-zinc-200 bg-zinc-900/90 border border-zinc-700/80 rounded-md hover:bg-zinc-800 hover:text-white transition-all inline-flex items-center gap-2 shadow-sm">
+                  <svg class="w-4 h-4 text-zinc-300" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  <span>GitHub</span>
+                </a>
+
+                <a href="https://linkedin.com/in/devmansoor" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 text-sm font-semibold text-zinc-200 bg-zinc-900/90 border border-zinc-700/80 rounded-md hover:bg-zinc-800 hover:text-cyan-400 transition-all inline-flex items-center gap-2 shadow-sm">
+                  <svg class="w-4 h-4 text-cyan-400" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                  <span>LinkedIn</span>
+                </a>
+
+                <button type="button" class="copy-email-btn px-4 py-2.5 text-sm font-medium text-zinc-300 bg-zinc-900/70 border border-zinc-700 rounded-md hover:text-white hover:border-emerald-500/50 transition-colors inline-flex items-center gap-2">
+                  <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                  <span>killerdon3942@gmail.com</span>
+                </button>
+              </div>
+
+            </div>
+
+            <!-- Right Column: Profile Frame with Glowing Multi-Color Border -->
+            <div class="lg:col-span-5 flex justify-center lg:justify-end">
+              <div class="reveal-init delay-200 relative w-full max-w-sm">
+                
+                <!-- Floating Animated Tech Badges -->
+                <div class="animate-float absolute -top-4 -left-6 z-20 hidden sm:flex items-center gap-2 bg-[#121528] border border-rose-500/60 px-3 py-1.5 rounded-lg shadow-xl text-xs font-mono text-rose-300 backdrop-blur-md">
+                  <svg class="w-3.5 h-3.5 text-rose-500 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                  <span>Laravel 11 Specialist</span>
+                </div>
+
+                <div class="animate-float absolute -bottom-4 -right-4 z-20 hidden sm:flex items-center gap-2 bg-[#121528] border border-cyan-500/60 px-3 py-1.5 rounded-lg shadow-xl text-xs font-mono text-cyan-300 backdrop-blur-md" style="animation-delay: 2.2s;">
+                  <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
+                  <span>Tailwind &amp; Bootstrap</span>
+                </div>
+
+                <!-- Profile Image Card with colorful gradient aura -->
+                <div class="relative p-[2px] rounded-2xl bg-gradient-to-br from-emerald-500/60 via-indigo-500/40 to-rose-500/60 shadow-2xl">
+                  <div class="bg-[#0e1022] rounded-2xl overflow-hidden">
+                    <div class="aspect-square w-full relative overflow-hidden bg-zinc-950">
+                      <img 
+                        src="/src/assets/images/mansoor_ali_profile_1790872776875.jpg" 
+                        alt="Mansoor Ali - Full Stack Laravel Web Developer"
+                        class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-500"
+                        referrerpolicy="no-referrer"
+                      />
+                      <div class="absolute inset-0 bg-gradient-to-t from-[#0e1022] via-transparent to-transparent"></div>
+                      
+                      <!-- Availability Badge with live pulsating ring -->
+                      <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs bg-[#0b0d1e]/90 border border-emerald-500/40 px-3 py-2 rounded-lg backdrop-blur-md">
+                        <div class="flex items-center gap-2">
+                          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                          <span class="font-semibold text-emerald-300">Open for Opportunities</span>
+                        </div>
+                        <span class="text-zinc-400 font-mono text-[11px]">Remote / Full-time</span>
+                      </div>
+                    </div>
+
+                    <!-- Spec Sheet with colorful accent highlights -->
+                    <div class="p-4 space-y-2.5 text-xs bg-[#0e1022]/90">
+                      <div class="flex items-center justify-between text-zinc-300">
+                        <span>Core Framework</span>
+                        <span class="font-mono text-rose-400 font-bold">Laravel 11 · PHP 8+</span>
+                      </div>
+                      <div class="flex items-center justify-between text-zinc-300">
+                        <span>Frontend Styling</span>
+                        <span class="font-mono text-cyan-400 font-medium">Tailwind CSS · Bootstrap</span>
+                      </div>
+                      <div class="flex items-center justify-between text-zinc-300">
+                        <span>Database Engine</span>
+                        <span class="font-mono text-emerald-400 font-medium">MySQL · Redis Cache</span>
+                      </div>
+                      <div class="flex items-center justify-between text-zinc-300">
+                        <span>Architecture</span>
+                        <span class="font-mono text-indigo-300 font-medium">RESTful APIs · MVC · OOP</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- DYNAMIC WORKING STATS DASHBOARD & LIVE BENCHMARK SECTION -->
+      <section id="stats-dashboard" class="py-12 border-b border-white/10 colorful-section-accent relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="reveal-init flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6">
+            <div>
+              <div class="inline-flex items-center gap-2 text-xs font-bold text-emerald-400 uppercase tracking-wider">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                <span>Dynamic Live Engineering Metrics</span>
+              </div>
+              <h2 class="mt-1 text-2xl sm:text-3xl font-extrabold text-white">
+                Interactive Performance &amp; Production Stats
+              </h2>
+              <p class="text-xs text-zinc-400 mt-1">
+                Select a category below to dynamically calculate and inspect verified production engineering metrics.
+              </p>
+            </div>
+
+            <!-- Dynamic Stats Mode Switcher -->
+            <div class="flex flex-wrap items-center gap-1.5 p-1 bg-zinc-950/80 border border-white/10 rounded-lg shadow-inner">
+              <button type="button" data-category="overall" class="stats-category-tab px-3.5 py-1.5 text-xs font-semibold rounded-md transition-all bg-emerald-500 text-zinc-950 shadow-md shadow-emerald-500/20">
+                Overall Highlights
+              </button>
+              <button type="button" data-category="backend" class="stats-category-tab px-3.5 py-1.5 text-xs font-medium rounded-md transition-all text-zinc-400 hover:text-white bg-zinc-900/60 hover:bg-zinc-800">
+                Backend &amp; Laravel
+              </button>
+              <button type="button" data-category="frontend" class="stats-category-tab px-3.5 py-1.5 text-xs font-medium rounded-md transition-all text-zinc-400 hover:text-white bg-zinc-900/60 hover:bg-zinc-800">
+                Frontend &amp; UI
+              </button>
+              <button type="button" data-category="code" class="stats-category-tab px-3.5 py-1.5 text-xs font-medium rounded-md transition-all text-zinc-400 hover:text-white bg-zinc-900/60 hover:bg-zinc-800">
+                Code Volume
+              </button>
+            </div>
+          </div>
+
+          <!-- Dynamic 4-Stat Box Grid -->
+          <div id="stats-row" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-2">
+            
+            <div class="p-5 rounded-xl bg-gradient-to-b from-indigo-950/40 to-[#0e1022]/90 border border-indigo-500/20 shadow-lg hover:border-indigo-500/40 transition-all">
+              <div class="text-3xl font-black font-mono text-indigo-300 tabular-nums stat-value-display">2+</div>
+              <div class="text-sm font-semibold text-white mt-1 stat-label-display">Years Experience</div>
+              <div class="text-xs text-zinc-400 mt-1 font-mono stat-sublabel-display">26+ Months Production</div>
+            </div>
+
+            <div class="p-5 rounded-xl bg-gradient-to-b from-emerald-950/40 to-[#0e1022]/90 border border-emerald-500/20 shadow-lg hover:border-emerald-500/40 transition-all">
+              <div class="text-3xl font-black font-mono text-emerald-300 tabular-nums stat-value-display">18+</div>
+              <div class="text-sm font-semibold text-white mt-1 stat-label-display">Commercial Projects</div>
+              <div class="text-xs text-zinc-400 mt-1 font-mono stat-sublabel-display">Client &amp; SaaS Builds</div>
+            </div>
+
+            <div class="p-5 rounded-xl bg-gradient-to-b from-cyan-950/40 to-[#0e1022]/90 border border-cyan-500/20 shadow-lg hover:border-cyan-500/40 transition-all">
+              <div class="text-3xl font-black font-mono text-cyan-300 tabular-nums stat-value-display">99.9%</div>
+              <div class="text-sm font-semibold text-white mt-1 stat-label-display">System Uptime</div>
+              <div class="text-xs text-zinc-400 mt-1 font-mono stat-sublabel-display">Production SLAs</div>
+            </div>
+
+            <div class="p-5 rounded-xl bg-gradient-to-b from-rose-950/40 to-[#0e1022]/90 border border-rose-500/20 shadow-lg hover:border-rose-500/40 transition-all">
+              <div class="text-3xl font-black font-mono text-rose-300 tabular-nums stat-value-display">&lt;85ms</div>
+              <div class="text-sm font-semibold text-white mt-1 stat-label-display">Avg Query Latency</div>
+              <div class="text-xs text-zinc-400 mt-1 font-mono stat-sublabel-display">MySQL &amp; Redis Cache</div>
+            </div>
+
+          </div>
+
+          <!-- Working Live Latency Benchmark Bar -->
+          <div class="mt-6 p-4 rounded-xl bg-[#0b0d1e]/80 border border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+              <div id="benchmark-ping-light" class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></div>
+              <div class="text-xs text-zinc-300">
+                <span class="font-semibold text-white">Live Performance Benchmark:</span>
+                <span class="ml-1 text-zinc-400">Current measured query response:</span>
+                <span id="benchmark-result" class="font-mono font-bold text-emerald-400 ml-1">72ms</span>
+              </div>
+            </div>
+
+            <button type="button" id="run-benchmark-btn" class="px-3.5 py-1.5 text-xs font-semibold text-zinc-200 bg-zinc-800 hover:bg-zinc-700 hover:text-white rounded-md transition-colors inline-flex items-center gap-1.5 border border-zinc-700">
+              <svg class="w-3.5 h-3.5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              <span>Test Live Latency</span>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Infinite Animated Tech Marquee Ticker -->
+      <section class="py-5 border-b border-white/10 bg-[#070812] overflow-hidden select-none">
+        <div class="marquee-track flex items-center gap-8 text-sm font-mono text-zinc-300">
+          
+          <div class="flex items-center gap-2.5 shrink-0 px-3.5 py-1.5 bg-orange-950/40 border border-orange-500/40 rounded-lg">
+            <span class="w-2 h-2 rounded-full bg-orange-400"></span>
+            <span class="text-orange-200 font-bold">HTML5</span>
+          </div>
+          <div class="flex items-center gap-2.5 shrink-0 px-3.5 py-1.5 bg-blue-950/40 border border-blue-500/40 rounded-lg">
+            <span class="w-2 h-2 rounded-full bg-blue-400"></span>
+            <span class="text-blue-200 font-bold">CSS3</span>
+          </div>
+          <div class="flex items-center gap-2.5 shrink-0 px-3.5 py-1.5 bg-purple-950/40 border border-purple-500/40 rounded-lg">
+            <span class="w-2 h-2 rounded-full bg-purple-400"></span>
+            <span class="text-purple-200 font-bold">Bootstrap 5</span>
+          </div>
+          <div class="flex items-center gap-2.5 shrink-0 px-3.5 py-1.5 bg-cyan-950/40 border border-cyan-500/40 rounded-lg">
+            <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
+            <span class="text-cyan-200 font-bold">Tailwind CSS</span>
+          </div>
+          <div class="flex items-center gap-2.5 shrink-0 px-3.5 py-1.5 bg-indigo-950/40 border border-indigo-500/40 rounded-lg">
+            <span class="w-2 h-2 rounded-full bg-indigo-400"></span>
+            <span class="text-indigo-200 font-bold">PHP 8+</span>
+          </div>
+          <div class="flex items-center gap-2.5 shrink-0 px-3.5 py-1.5 bg-rose-950/60 border border-rose-500/60 rounded-lg shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-rose-400 animate-pulse"></span>
+            <span class="text-rose-100 font-extrabold">Laravel 11</span>
+          </div>
+          <div class="flex items-center gap-2.5 shrink-0 px-3.5 py-1.5 bg-emerald-950/40 border border-emerald-500/40 rounded-lg">
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+            <span class="text-emerald-200 font-bold">MySQL</span>
+          </div>
+          <div class="flex items-center gap-2.5 shrink-0 px-3.5 py-1.5 bg-yellow-950/40 border border-yellow-500/40 rounded-lg">
+            <span class="w-2 h-2 rounded-full bg-yellow-400"></span>
+            <span class="text-yellow-200 font-bold">JavaScript ES6+</span>
+          </div>
+          <div class="flex items-center gap-2.5 shrink-0 px-3.5 py-1.5 bg-red-950/40 border border-red-500/40 rounded-lg">
+            <span class="w-2 h-2 rounded-full bg-red-400"></span>
+            <span class="text-red-200 font-bold">Redis Cache</span>
+          </div>
+          <div class="flex items-center gap-2.5 shrink-0 px-3.5 py-1.5 bg-teal-950/40 border border-teal-500/40 rounded-lg">
+            <span class="w-2 h-2 rounded-full bg-teal-400"></span>
+            <span class="text-teal-200 font-bold">RESTful APIs</span>
+          </div>
+
+          <!-- Duplicate for seamless continuous track -->
+          <div class="flex items-center gap-2.5 shrink-0 px-3.5 py-1.5 bg-orange-950/40 border border-orange-500/40 rounded-lg">
+            <span class="w-2 h-2 rounded-full bg-orange-400"></span>
+            <span class="text-orange-200 font-bold">HTML5</span>
+          </div>
+          <div class="flex items-center gap-2.5 shrink-0 px-3.5 py-1.5 bg-blue-950/40 border border-blue-500/40 rounded-lg">
+            <span class="w-2 h-2 rounded-full bg-blue-400"></span>
+            <span class="text-blue-200 font-bold">CSS3</span>
+          </div>
+          <div class="flex items-center gap-2.5 shrink-0 px-3.5 py-1.5 bg-purple-950/40 border border-purple-500/40 rounded-lg">
+            <span class="w-2 h-2 rounded-full bg-purple-400"></span>
+            <span class="text-purple-200 font-bold">Bootstrap 5</span>
+          </div>
+          <div class="flex items-center gap-2.5 shrink-0 px-3.5 py-1.5 bg-cyan-950/40 border border-cyan-500/40 rounded-lg">
+            <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
+            <span class="text-cyan-200 font-bold">Tailwind CSS</span>
+          </div>
+          <div class="flex items-center gap-2.5 shrink-0 px-3.5 py-1.5 bg-indigo-950/40 border border-indigo-500/40 rounded-lg">
+            <span class="w-2 h-2 rounded-full bg-indigo-400"></span>
+            <span class="text-indigo-200 font-bold">PHP 8+</span>
+          </div>
+          <div class="flex items-center gap-2.5 shrink-0 px-3.5 py-1.5 bg-rose-950/60 border border-rose-500/60 rounded-lg shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-rose-400 animate-pulse"></span>
+            <span class="text-rose-100 font-extrabold">Laravel 11</span>
+          </div>
+          <div class="flex items-center gap-2.5 shrink-0 px-3.5 py-1.5 bg-emerald-950/40 border border-emerald-500/40 rounded-lg">
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+            <span class="text-emerald-200 font-bold">MySQL</span>
+          </div>
+          <div class="flex items-center gap-2.5 shrink-0 px-3.5 py-1.5 bg-yellow-950/40 border border-yellow-500/40 rounded-lg">
+            <span class="w-2 h-2 rounded-full bg-yellow-400"></span>
+            <span class="text-yellow-200 font-bold">JavaScript ES6+</span>
+          </div>
+          <div class="flex items-center gap-2.5 shrink-0 px-3.5 py-1.5 bg-red-950/40 border border-red-500/40 rounded-lg">
+            <span class="w-2 h-2 rounded-full bg-red-400"></span>
+            <span class="text-red-200 font-bold">Redis Cache</span>
+          </div>
+          <div class="flex items-center gap-2.5 shrink-0 px-3.5 py-1.5 bg-teal-950/40 border border-teal-500/40 rounded-lg">
+            <span class="w-2 h-2 rounded-full bg-teal-400"></span>
+            <span class="text-teal-200 font-bold">RESTful APIs</span>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- PRIMARY SKILLS SECTION (HTML, CSS, Bootstrap, Tailwind, PHP, Laravel) -->
+      <section id="skills" class="py-16 md:py-24 border-b border-white/10 colorful-section-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="reveal-init max-w-3xl">
+            <h2 class="text-xs font-bold uppercase tracking-wider text-emerald-400">Core Technical Arsenal</h2>
+            <p class="mt-2 text-2xl sm:text-3xl font-extrabold text-white" style="text-wrap: balance;">
+              Html · CSS · Bootstrap · Tailwind CSS · Php · Laravel
+            </p>
+            <p class="text-sm text-zinc-300 mt-2">
+              Click any technology card below to dynamically inspect architecture notes, production use cases, and projects in Mansoor's portfolio.
+            </p>
+          </div>
+
+          <!-- 6 Prominent Core Skill Cards Grid with Colorful Accents -->
+          <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Skill 1: HTML -->
+            <div data-skill="html" class="skill-interactive-card skill-card-glow reveal-init p-6 border border-orange-500/30 rounded-xl cursor-pointer select-none bg-gradient-to-b from-[#141224] to-[#0c0d1a]">
+              <div class="flex items-start justify-between">
+                <div class="w-12 h-12 rounded-lg bg-orange-500/20 border border-orange-500/40 flex items-center justify-center text-orange-400 shadow-lg shadow-orange-500/10">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2L3 5v14l9 3 9-3V5l-9-3zm7 15.5l-7 2.3-7-2.3V6.7l7-2.3 7 2.3v10.8z"/>
+                  </svg>
+                </div>
+                <div class="text-right">
+                  <span class="text-xs font-mono text-zinc-400">Proficiency</span>
+                  <div class="text-lg font-bold font-mono text-orange-400">96%</div>
+                </div>
+              </div>
+
+              <div class="mt-4">
+                <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                  <span>HTML &amp; HTML5</span>
+                  <span class="text-xs font-normal text-zinc-400 font-mono">2+ yrs</span>
+                </h3>
+                <p class="text-xs text-zinc-300 mt-1 line-clamp-2">
+                  Semantic document hierarchy, web accessibility (ARIA), modern form controls, SEO schema, and performant asset loading.
+                </p>
+              </div>
+
+              <div class="mt-4 pt-3 border-t border-white/10">
+                <div class="w-full bg-zinc-800 rounded-full h-1.5 overflow-hidden">
+                  <div class="skill-progress-bar bg-gradient-to-r from-orange-500 to-amber-400 h-1.5 rounded-full" data-target-width="96%"></div>
+                </div>
+                <div class="flex justify-between items-center text-[11px] text-zinc-400 mt-1.5 font-mono">
+                  <span>Semantic Web</span>
+                  <span class="text-orange-400 font-semibold">Mastery</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Skill 2: CSS -->
+            <div data-skill="css" class="skill-interactive-card skill-card-glow reveal-init delay-100 p-6 border border-blue-500/30 rounded-xl cursor-pointer select-none bg-gradient-to-b from-[#101428] to-[#0c0d1a]">
+              <div class="flex items-start justify-between">
+                <div class="w-12 h-12 rounded-lg bg-blue-500/20 border border-blue-500/40 flex items-center justify-center text-blue-400 shadow-lg shadow-blue-500/10">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
+                  </svg>
+                </div>
+                <div class="text-right">
+                  <span class="text-xs font-mono text-zinc-400">Proficiency</span>
+                  <div class="text-lg font-bold font-mono text-blue-400">95%</div>
+                </div>
+              </div>
+
+              <div class="mt-4">
+                <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                  <span>CSS &amp; CSS3</span>
+                  <span class="text-xs font-normal text-zinc-400 font-mono">2+ yrs</span>
+                </h3>
+                <p class="text-xs text-zinc-300 mt-1 line-clamp-2">
+                  Advanced Flexbox, 2D CSS Grid layouts, custom properties, keyframe animations, fluid typography, and mobile-first design.
+                </p>
+              </div>
+
+              <div class="mt-4 pt-3 border-t border-white/10">
+                <div class="w-full bg-zinc-800 rounded-full h-1.5 overflow-hidden">
+                  <div class="skill-progress-bar bg-gradient-to-r from-blue-500 to-cyan-400 h-1.5 rounded-full" data-target-width="95%"></div>
+                </div>
+                <div class="flex justify-between items-center text-[11px] text-zinc-400 mt-1.5 font-mono">
+                  <span>Flexbox &amp; Grid</span>
+                  <span class="text-blue-400 font-semibold">Mastery</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Skill 3: Bootstrap -->
+            <div data-skill="bootstrap" class="skill-interactive-card skill-card-glow reveal-init delay-200 p-6 border border-purple-500/30 rounded-xl cursor-pointer select-none bg-gradient-to-b from-[#18112a] to-[#0c0d1a]">
+              <div class="flex items-start justify-between">
+                <div class="w-12 h-12 rounded-lg bg-purple-500/20 border border-purple-500/40 flex items-center justify-center text-purple-400 shadow-lg shadow-purple-500/10">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M4.5 3h9.25c2.6 0 4.25 1.55 4.25 3.75 0 1.55-.85 2.75-2.25 3.35v.1c1.8.5 2.75 1.9 2.75 3.8 0 2.5-1.9 4-4.75 4H4.5V3zm3.7 3.1v3.9h5.1c1.2 0 1.9-.65 1.9-1.95 0-1.25-.7-1.95-1.9-1.95H8.2zm0 6.8v4.3h5.6c1.35 0 2.1-.75 2.1-2.15 0-1.35-.75-2.15-2.1-2.15H8.2z"/>
+                  </svg>
+                </div>
+                <div class="text-right">
+                  <span class="text-xs font-mono text-zinc-400">Proficiency</span>
+                  <div class="text-lg font-bold font-mono text-purple-400">90%</div>
+                </div>
+              </div>
+
+              <div class="mt-4">
+                <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                  <span>Bootstrap</span>
+                  <span class="text-xs font-normal text-zinc-400 font-mono">2+ yrs</span>
+                </h3>
+                <p class="text-xs text-zinc-300 mt-1 line-clamp-2">
+                  Bootstrap 4 &amp; 5 grid system, responsive UI components, custom SCSS variables, and rapid enterprise administrative dashboards.
+                </p>
+              </div>
+
+              <div class="mt-4 pt-3 border-t border-white/10">
+                <div class="w-full bg-zinc-800 rounded-full h-1.5 overflow-hidden">
+                  <div class="skill-progress-bar bg-gradient-to-r from-purple-500 to-pink-500 h-1.5 rounded-full" data-target-width="90%"></div>
+                </div>
+                <div class="flex justify-between items-center text-[11px] text-zinc-400 mt-1.5 font-mono">
+                  <span>Bootstrap 4/5</span>
+                  <span class="text-purple-400 font-semibold">Advanced</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Skill 4: Tailwind CSS -->
+            <div data-skill="tailwind" class="skill-interactive-card skill-card-glow reveal-init p-6 border border-cyan-500/30 rounded-xl cursor-pointer select-none bg-gradient-to-b from-[#101928] to-[#0c0d1a]">
+              <div class="flex items-start justify-between">
+                <div class="w-12 h-12 rounded-lg bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center text-cyan-400 shadow-lg shadow-cyan-500/10">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"/>
+                  </svg>
+                </div>
+                <div class="text-right">
+                  <span class="text-xs font-mono text-zinc-400">Proficiency</span>
+                  <div class="text-lg font-bold font-mono text-cyan-400">94%</div>
+                </div>
+              </div>
+
+              <div class="mt-4">
+                <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                  <span>Tailwind CSS</span>
+                  <span class="text-xs font-normal text-zinc-400 font-mono">2+ yrs</span>
+                </h3>
+                <p class="text-xs text-zinc-300 mt-1 line-clamp-2">
+                  Utility-first design systems, custom configuration, responsive breakpoints, dark mode orchestration, and zero CSS bloat.
+                </p>
+              </div>
+
+              <div class="mt-4 pt-3 border-t border-white/10">
+                <div class="w-full bg-zinc-800 rounded-full h-1.5 overflow-hidden">
+                  <div class="skill-progress-bar bg-gradient-to-r from-cyan-400 to-emerald-400 h-1.5 rounded-full" data-target-width="94%"></div>
+                </div>
+                <div class="flex justify-between items-center text-[11px] text-zinc-400 mt-1.5 font-mono">
+                  <span>Design Systems</span>
+                  <span class="text-cyan-400 font-semibold">Mastery</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Skill 5: PHP -->
+            <div data-skill="php" class="skill-interactive-card skill-card-glow reveal-init delay-100 p-6 border border-indigo-500/30 rounded-xl cursor-pointer select-none bg-gradient-to-b from-[#141530] to-[#0c0d1a]">
+              <div class="flex items-start justify-between">
+                <div class="w-12 h-12 rounded-lg bg-indigo-500/20 border border-indigo-500/40 flex items-center justify-center text-indigo-400 shadow-lg shadow-indigo-500/10">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm1 14.5h-2v-5h2v5zm0-7h-2V7h2v2.5z"/>
+                  </svg>
+                </div>
+                <div class="text-right">
+                  <span class="text-xs font-mono text-zinc-400">Proficiency</span>
+                  <div class="text-lg font-bold font-mono text-indigo-400">93%</div>
+                </div>
+              </div>
+
+              <div class="mt-4">
+                <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                  <span>PHP (8.0 - 8.3)</span>
+                  <span class="text-xs font-normal text-zinc-400 font-mono">2+ yrs</span>
+                </h3>
+                <p class="text-xs text-zinc-300 mt-1 line-clamp-2">
+                  Object-Oriented Programming (OOP), SOLID design, Composer dependencies, namespaces, traits, typing, and secure backend logic.
+                </p>
+              </div>
+
+              <div class="mt-4 pt-3 border-t border-white/10">
+                <div class="w-full bg-zinc-800 rounded-full h-1.5 overflow-hidden">
+                  <div class="skill-progress-bar bg-gradient-to-r from-indigo-500 to-purple-400 h-1.5 rounded-full" data-target-width="93%"></div>
+                </div>
+                <div class="flex justify-between items-center text-[11px] text-zinc-400 mt-1.5 font-mono">
+                  <span>Modern OOP PHP</span>
+                  <span class="text-indigo-400 font-semibold">Advanced</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Skill 6: Laravel -->
+            <div data-skill="laravel" class="skill-interactive-card skill-card-glow reveal-init delay-200 p-6 border border-rose-500/50 rounded-xl cursor-pointer select-none ring-2 ring-rose-500/40 bg-gradient-to-b from-[#22101e] to-[#0c0d1a] shadow-lg shadow-rose-950/30">
+              <div class="flex items-start justify-between">
+                <div class="w-12 h-12 rounded-lg bg-rose-500/25 border border-rose-500/50 flex items-center justify-center text-rose-400 shadow-lg shadow-rose-500/20">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                  </svg>
+                </div>
+                <div class="text-right">
+                  <span class="text-xs font-mono text-zinc-400">Proficiency</span>
+                  <div class="text-lg font-bold font-mono text-rose-400">95%</div>
+                </div>
+              </div>
+
+              <div class="mt-4">
+                <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                  <span>Laravel (10 &amp; 11)</span>
+                  <span class="text-xs font-semibold text-rose-400 font-mono">Specialist</span>
+                </h3>
+                <p class="text-xs text-zinc-300 mt-1 line-clamp-2">
+                  Eloquent ORM, complex relations, database migrations, queue workers, Redis caching, RESTful Sanctum APIs, and Blade/Livewire.
+                </p>
+              </div>
+
+              <div class="mt-4 pt-3 border-t border-white/10">
+                <div class="w-full bg-zinc-800 rounded-full h-1.5 overflow-hidden">
+                  <div class="skill-progress-bar bg-gradient-to-r from-rose-500 to-orange-400 h-1.5 rounded-full" data-target-width="95%"></div>
+                </div>
+                <div class="flex justify-between items-center text-[11px] text-zinc-400 mt-1.5 font-mono">
+                  <span>Ecosystem Mastery</span>
+                  <span class="text-rose-400 font-semibold">Specialist</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Dynamic Skill Detail Drawer / Dynamic Exploration Box -->
+          <div id="skill-detail-drawer" class="mt-8 bg-[#0e1124]/90 border border-white/15 rounded-xl p-6 sm:p-8 relative overflow-hidden transition-all duration-300 shadow-xl">
+            <div id="skill-drawer-accent" class="absolute top-0 left-0 right-0 h-1 bg-rose-500 transition-colors duration-300"></div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+              
+              <div class="lg:col-span-4 space-y-3">
+                <div class="flex items-center gap-2">
+                  <span id="skill-drawer-category" class="text-xs font-mono text-emerald-400 uppercase tracking-wider font-semibold">Framework</span>
+                </div>
+                <h4 id="skill-drawer-title" class="text-2xl font-bold text-white">Laravel (10 &amp; 11)</h4>
+                
+                <div class="flex items-center gap-4 text-xs font-mono text-zinc-300 pt-1">
+                  <div>
+                    <span class="text-zinc-500 block">Experience</span>
+                    <span id="skill-drawer-exp" class="text-white font-medium">2+ Years Production</span>
+                  </div>
+                  <div>
+                    <span class="text-zinc-500 block">Proficiency</span>
+                    <span id="skill-drawer-prof" class="text-emerald-400 font-bold">95%</span>
+                  </div>
+                </div>
+
+                <p id="skill-drawer-desc" class="text-xs text-zinc-300 leading-relaxed pt-2">
+                  Specialized expertise across the entire Laravel framework ecosystem.
+                </p>
+              </div>
+
+              <div class="lg:col-span-5 space-y-3">
+                <h5 class="text-xs font-bold uppercase tracking-wider text-zinc-200">Production Capabilities &amp; Architecture</h5>
+                <ul id="skill-drawer-points" class="space-y-2"></ul>
+              </div>
+
+              <div class="lg:col-span-3 space-y-3">
+                <h5 class="text-xs font-bold uppercase tracking-wider text-zinc-200">Applied in Portfolio</h5>
+                <div id="skill-drawer-projects" class="flex flex-wrap gap-2"></div>
+
+                <div class="pt-3">
+                  <a href="#projects" class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 hover:text-emerald-300">
+                    <span>View Projects Using This Tech</span>
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="py-16 md:py-24 border-b border-white/10 colorful-hero-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="reveal-init max-w-3xl">
+            <h2 class="text-xs font-semibold uppercase tracking-wider text-emerald-400">About Mansoor</h2>
+            <p class="mt-2 text-2xl sm:text-3xl font-bold tracking-tight text-white" style="text-wrap: balance;">
+              Engineering dynamic web solutions with clean architecture and responsive polish.
+            </p>
+          </div>
+
+          <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div class="reveal-init p-6 bg-gradient-to-b from-[#13172e] to-[#0c0e1e] border border-white/10 rounded-xl space-y-3 transition-all hover:border-emerald-500/40">
+              <div class="w-10 h-10 rounded-lg bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/></svg>
+              </div>
+              <h3 class="text-base font-semibold text-white">Full-Stack Laravel Mastery</h3>
+              <p class="text-sm text-zinc-300 leading-relaxed">
+                Specialized in deep Laravel ecosystem capabilities: Eloquent ORM relationships, custom database migrations, service-repository patterns, event listeners, and Artisan task scheduling.
+              </p>
+            </div>
+
+            <div class="reveal-init delay-100 p-6 bg-gradient-to-b from-[#13172e] to-[#0c0e1e] border border-white/10 rounded-xl space-y-3 transition-all hover:border-indigo-500/40">
+              <div class="w-10 h-10 rounded-lg bg-indigo-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/></svg>
+              </div>
+              <h3 class="text-base font-semibold text-white">Database &amp; Queue Tuning</h3>
+              <p class="text-sm text-zinc-300 leading-relaxed">
+                Experienced in preventing N+1 query traps, implementing database indexes, transactional rollbacks, and offloading heavy tasks to asynchronous Redis queue workers.
+              </p>
+            </div>
+
+            <div class="reveal-init delay-200 p-6 bg-gradient-to-b from-[#13172e] to-[#0c0e1e] border border-white/10 rounded-xl space-y-3 transition-all hover:border-cyan-500/40">
+              <div class="w-10 h-10 rounded-lg bg-cyan-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+              </div>
+              <h3 class="text-base font-semibold text-white">Responsive Tailwind &amp; Bootstrap</h3>
+              <p class="text-sm text-zinc-300 leading-relaxed">
+                Dedicated to crafting modern, accessible user interfaces with clean utility-first CSS and component systems. Smooth viewport adaptations ensuring exceptional mobile and desktop experiences.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section (Interactive Filter & Bento Showcase) -->
+      <section id="projects" class="py-16 md:py-24 border-b border-white/10 colorful-section-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <!-- Header and Filter Controls -->
+          <div class="reveal-init flex flex-col md:flex-row md:items-end justify-between gap-6 pb-8 border-b border-white/10">
+            <div>
+              <div class="flex items-center gap-3">
+                <h2 class="text-xs font-semibold uppercase tracking-wider text-emerald-400">Portfolio Showcase</h2>
+                <span id="project-filter-count" class="text-xs font-mono px-2 py-0.5 rounded bg-emerald-950/60 border border-emerald-500/30 text-emerald-300">
+                  Showing 4 of 4 Projects
+                </span>
+              </div>
+              <p class="mt-2 text-2xl sm:text-3xl font-extrabold text-white">
+                Featured Commercial &amp; SaaS Projects
+              </p>
+              <p class="text-sm text-zinc-300 mt-1 max-w-xl">
+                Real-world web systems powered by Laravel, PHP, MySQL, Tailwind CSS, Bootstrap, and HTML5/CSS3.
+              </p>
+            </div>
+
+            <!-- Filter Tabs (Interactive Segmented Control) -->
+            <div class="inline-flex p-1 bg-zinc-950 border border-white/10 rounded-lg shrink-0">
+              <button type="button" data-filter="all" class="project-filter-btn px-3 py-1.5 text-xs font-semibold rounded-md transition-all bg-emerald-500 text-zinc-950 shadow-md shadow-emerald-500/20">
+                All Works
+              </button>
+              <button type="button" data-filter="saas" class="project-filter-btn px-3 py-1.5 text-xs font-medium rounded-md transition-all text-zinc-400 hover:text-white">
+                Laravel SaaS
+              </button>
+              <button type="button" data-filter="backend" class="project-filter-btn px-3 py-1.5 text-xs font-medium rounded-md transition-all text-zinc-400 hover:text-white">
+                Enterprise Backends
+              </button>
+              <button type="button" data-filter="fullstack" class="project-filter-btn px-3 py-1.5 text-xs font-medium rounded-md transition-all text-zinc-400 hover:text-white">
+                Full Stack Systems
+              </button>
+            </div>
+          </div>
+
+          <!-- Projects Grid with colorful glassmorphic cards -->
+          <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <!-- Project 1: OmniCart Pro -->
+            <div class="project-card reveal-init group bg-gradient-to-b from-[#13172e] to-[#0c0d1a] border border-white/10 rounded-xl overflow-hidden hover:border-emerald-500/50 transition-all duration-300 flex flex-col shadow-xl" data-category="saas">
+              <div class="aspect-video w-full overflow-hidden bg-zinc-950 relative">
+                <img 
+                  src="/src/assets/images/laravel_ecommerce_platform_1790872797404.jpg" 
+                  alt="OmniCart Pro - Multi-Vendor E-Commerce Platform"
+                  class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  referrerpolicy="no-referrer"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0c0d1a] via-transparent to-transparent"></div>
+                <div class="absolute top-3 left-3">
+                  <span class="text-[11px] font-mono font-semibold text-emerald-300 bg-zinc-950/80 border border-emerald-500/50 px-2 py-0.5 rounded backdrop-blur-sm">
+                    Laravel 11 · Tailwind CSS
+                  </span>
+                </div>
+              </div>
+
+              <div class="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center gap-2 text-xs text-zinc-400 mb-2">
+                    <span class="text-emerald-400 font-semibold">E-Commerce Engine</span>
+                    <span aria-hidden="true">·</span>
+                    <span>Multi-Store Architecture</span>
+                    <span aria-hidden="true">·</span>
+                    <span>2024</span>
+                  </div>
+
+                  <h3 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">
+                    OmniCart Pro — Enterprise E-Commerce Platform
+                  </h3>
+
+                  <p class="text-sm text-zinc-300 mt-2.5 leading-relaxed line-clamp-3">
+                    Multi-vendor marketplace platform featuring dynamic shopping sessions, automated inventory lockouts, Stripe Connect payment splitting, and asynchronous background queues for automated PDF invoices.
+                  </p>
+
+                  <div class="mt-4 flex flex-wrap gap-2 text-xs font-mono text-zinc-300">
+                    <span class="bg-orange-950/40 text-orange-300 px-2 py-1 rounded border border-orange-500/30">HTML5/CSS3</span>
+                    <span class="bg-cyan-950/40 text-cyan-300 px-2 py-1 rounded border border-cyan-500/30">Tailwind CSS</span>
+                    <span class="bg-indigo-950/40 text-indigo-300 px-2 py-1 rounded border border-indigo-500/30">PHP 8.3</span>
+                    <span class="bg-rose-950/40 text-rose-300 px-2 py-1 rounded border border-rose-500/30 font-bold">Laravel 11</span>
+                  </div>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
+                  <div class="text-xs font-mono text-zinc-300">
+                    Latency: <span class="text-emerald-400 font-bold tabular-nums">&lt;280ms</span>
+                  </div>
+                  
+                  <button type="button" data-project="omnicart" class="open-project-modal-btn text-xs font-semibold text-white bg-zinc-800 hover:bg-zinc-700 px-3.5 py-1.5 rounded-md transition-colors inline-flex items-center gap-1.5 border border-white/10">
+                    <span>Explore Architecture</span>
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2: FleetPulse -->
+            <div class="project-card reveal-init delay-100 group bg-gradient-to-b from-[#13172e] to-[#0c0d1a] border border-white/10 rounded-xl overflow-hidden hover:border-cyan-500/50 transition-all duration-300 flex flex-col shadow-xl" data-category="backend">
+              <div class="aspect-video w-full overflow-hidden bg-zinc-950 relative">
+                <img 
+                  src="/src/assets/images/laravel_logistics_system_1790872815533.jpg" 
+                  alt="FleetPulse - Logistics & Fleet Tracking Platform"
+                  class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  referrerpolicy="no-referrer"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0c0d1a] via-transparent to-transparent"></div>
+                <div class="absolute top-3 left-3">
+                  <span class="text-[11px] font-mono font-semibold text-cyan-300 bg-zinc-950/80 border border-cyan-500/50 px-2 py-0.5 rounded backdrop-blur-sm">
+                    REST API · Spatial GIS
+                  </span>
+                </div>
+              </div>
+
+              <div class="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center gap-2 text-xs text-zinc-400 mb-2">
+                    <span class="text-cyan-400 font-semibold">Logistics SaaS</span>
+                    <span aria-hidden="true">·</span>
+                    <span>High-Frequency Telemetry</span>
+                    <span aria-hidden="true">·</span>
+                    <span>2024</span>
+                  </div>
+
+                  <h3 class="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+                    FleetPulse — Real-Time Fleet &amp; Dispatch Tracker
+                  </h3>
+
+                  <p class="text-sm text-zinc-300 mt-2.5 leading-relaxed line-clamp-3">
+                    High-throughput fleet telematics backend designed with Laravel RESTful APIs, MySQL spatial queries, geofencing triggers, and dispatcher dispatch workflows handling 50k+ daily tracking records.
+                  </p>
+
+                  <div class="mt-4 flex flex-wrap gap-2 text-xs font-mono text-zinc-300">
+                    <span class="bg-purple-950/40 text-purple-300 px-2 py-1 rounded border border-purple-500/30">Bootstrap 5</span>
+                    <span class="bg-cyan-950/40 text-cyan-300 px-2 py-1 rounded border border-cyan-500/30">Tailwind</span>
+                    <span class="bg-indigo-950/40 text-indigo-300 px-2 py-1 rounded border border-indigo-500/30">PHP 8</span>
+                    <span class="bg-rose-950/40 text-rose-300 px-2 py-1 rounded border border-rose-500/30 font-bold">Laravel API</span>
+                  </div>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
+                  <div class="text-xs font-mono text-zinc-300">
+                    Throughput: <span class="text-cyan-400 font-bold tabular-nums">50k req/day</span>
+                  </div>
+                  
+                  <button type="button" data-project="fleetpulse" class="open-project-modal-btn text-xs font-semibold text-white bg-zinc-800 hover:bg-zinc-700 px-3.5 py-1.5 rounded-md transition-colors inline-flex items-center gap-1.5 border border-white/10">
+                    <span>Explore Architecture</span>
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3: CarePulse Health -->
+            <div class="project-card reveal-init group bg-gradient-to-b from-[#13172e] to-[#0c0d1a] border border-white/10 rounded-xl overflow-hidden hover:border-purple-500/50 transition-all duration-300 flex flex-col shadow-xl" data-category="fullstack">
+              <div class="aspect-video w-full overflow-hidden bg-zinc-950 relative">
+                <img 
+                  src="/src/assets/images/laravel_telehealth_portal_1790872830842.jpg" 
+                  alt="CarePulse Health - Telehealth & Clinical Management"
+                  class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  referrerpolicy="no-referrer"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0c0d1a] via-transparent to-transparent"></div>
+                <div class="absolute top-3 left-3">
+                  <span class="text-[11px] font-mono font-semibold text-purple-300 bg-zinc-950/80 border border-purple-500/50 px-2 py-0.5 rounded backdrop-blur-sm">
+                    Laravel 10 · Twilio API
+                  </span>
+                </div>
+              </div>
+
+              <div class="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center gap-2 text-xs text-zinc-400 mb-2">
+                    <span class="text-purple-400 font-semibold">Healthcare Portal</span>
+                    <span aria-hidden="true">·</span>
+                    <span>Role-Based Access (RBAC)</span>
+                    <span aria-hidden="true">·</span>
+                    <span>2023 - 2024</span>
+                  </div>
+
+                  <h3 class="text-xl font-bold text-white group-hover:text-purple-400 transition-colors">
+                    CarePulse Health — Telemedicine &amp; Clinical Portal
+                  </h3>
+
+                  <p class="text-sm text-zinc-300 mt-2.5 leading-relaxed line-clamp-3">
+                    HIPAA-ready clinical consultation and doctor appointment management platform. Includes patient EHR storage, encrypted document attachments, Twilio SMS appointment reminders, and Laravel policy gates.
+                  </p>
+
+                  <div class="mt-4 flex flex-wrap gap-2 text-xs font-mono text-zinc-300">
+                    <span class="bg-orange-950/40 text-orange-300 px-2 py-1 rounded border border-orange-500/30">HTML5/CSS3</span>
+                    <span class="bg-purple-950/40 text-purple-300 px-2 py-1 rounded border border-purple-500/30">Bootstrap 5</span>
+                    <span class="bg-indigo-950/40 text-indigo-300 px-2 py-1 rounded border border-indigo-500/30">PHP / Laravel</span>
+                    <span class="bg-rose-950/40 text-rose-300 px-2 py-1 rounded border border-rose-500/30">Blade</span>
+                  </div>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
+                  <div class="text-xs font-mono text-zinc-300">
+                    No-Show Rate: <span class="text-purple-400 font-bold tabular-nums">-35%</span>
+                  </div>
+                  
+                  <button type="button" data-project="carepulse" class="open-project-modal-btn text-xs font-semibold text-white bg-zinc-800 hover:bg-zinc-700 px-3.5 py-1.5 rounded-md transition-colors inline-flex items-center gap-1.5 border border-white/10">
+                    <span>Explore Architecture</span>
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 4: ApexLedger -->
+            <div class="project-card reveal-init delay-100 group bg-gradient-to-b from-[#13172e] to-[#0c0d1a] border border-white/10 rounded-xl overflow-hidden hover:border-indigo-500/50 transition-all duration-300 flex flex-col shadow-xl" data-category="saas">
+              <div class="aspect-video w-full overflow-hidden bg-zinc-950 relative">
+                <img 
+                  src="/src/assets/images/laravel_fintech_analytics_1790872843802.jpg" 
+                  alt="ApexLedger - Multi-Tenant Financial Analytics"
+                  class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  referrerpolicy="no-referrer"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0c0d1a] via-transparent to-transparent"></div>
+                <div class="absolute top-3 left-3">
+                  <span class="text-[11px] font-mono font-semibold text-indigo-300 bg-zinc-950/80 border border-indigo-500/50 px-2 py-0.5 rounded backdrop-blur-sm">
+                    Multi-Tenant · DomPDF
+                  </span>
+                </div>
+              </div>
+
+              <div class="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center gap-2 text-xs text-zinc-400 mb-2">
+                    <span class="text-indigo-400 font-semibold">Fintech SaaS</span>
+                    <span aria-hidden="true">·</span>
+                    <span>Accounting Ledger</span>
+                    <span aria-hidden="true">·</span>
+                    <span>2023</span>
+                  </div>
+
+                  <h3 class="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors">
+                    ApexLedger — Multi-Tenant Financial Analytics
+                  </h3>
+
+                  <p class="text-sm text-zinc-300 mt-2.5 leading-relaxed line-clamp-3">
+                    Multi-tenant financial billing and ledger reconciliation system. Ensures complete organization tenant segregation, automated balance rollbacks, tax report calculations, and fast invoice exports.
+                  </p>
+
+                  <div class="mt-4 flex flex-wrap gap-2 text-xs font-mono text-zinc-300">
+                    <span class="bg-orange-950/40 text-orange-300 px-2 py-1 rounded border border-orange-500/30">HTML5</span>
+                    <span class="bg-cyan-950/40 text-cyan-300 px-2 py-1 rounded border border-cyan-500/30">Tailwind CSS</span>
+                    <span class="bg-indigo-950/40 text-indigo-300 px-2 py-1 rounded border border-indigo-500/30">PHP 8</span>
+                    <span class="bg-rose-950/40 text-rose-300 px-2 py-1 rounded border border-rose-500/30 font-bold">Laravel</span>
+                  </div>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
+                  <div class="text-xs font-mono text-zinc-300">
+                    Tenant Volume: <span class="text-indigo-400 font-bold tabular-nums">$850k+/mo</span>
+                  </div>
+                  
+                  <button type="button" data-project="apexledger" class="open-project-modal-btn text-xs font-semibold text-white bg-zinc-800 hover:bg-zinc-700 px-3.5 py-1.5 rounded-md transition-colors inline-flex items-center gap-1.5 border border-white/10">
+                    <span>Explore Architecture</span>
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Empty filter feedback fallback -->
+          <div id="no-projects-notice" class="hidden py-12 text-center text-zinc-400">
+            <p class="text-sm">No projects matched the selected filter.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Work Experience Timeline -->
+      <section id="experience" class="py-16 md:py-24 border-b border-white/10 colorful-hero-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="reveal-init max-w-3xl">
+            <h2 class="text-xs font-semibold uppercase tracking-wider text-emerald-400">Work History</h2>
+            <p class="mt-2 text-2xl sm:text-3xl font-bold tracking-tight text-white" style="text-wrap: balance;">
+              Two plus years of production software development experience.
+            </p>
+          </div>
+
+          <div class="mt-12 max-w-4xl space-y-10">
+            
+            <!-- Role 1 -->
+            <div class="reveal-init relative pl-8 border-l-2 border-emerald-500/60 space-y-3">
+              <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-emerald-400 border-4 border-[#080915] shadow-md shadow-emerald-500/50"></div>
+              
+              <div class="flex flex-wrap items-baseline justify-between gap-2">
+                <h3 class="text-lg font-bold text-white">Full Stack Laravel Developer</h3>
+                <span class="text-xs font-mono text-emerald-300 bg-emerald-950/60 border border-emerald-500/40 px-2.5 py-0.5 rounded">2024 — Present</span>
+              </div>
+
+              <div class="text-xs font-semibold text-emerald-400">Apex Solutions / Digital Labs · Remote &amp; On-site</div>
+
+              <p class="text-sm text-zinc-300 leading-relaxed">
+                Lead backend developer for client SaaS platforms and custom web portals built on Laravel 10/11, PHP 8, MySQL, and Tailwind CSS:
+              </p>
+
+              <ul class="space-y-2 text-sm text-zinc-300">
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-400 shrink-0">▸</span>
+                  <span>Architected and deployed 10+ dynamic web applications, implementing clean MVC separations, modular repository patterns, and granular authorization gates.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-400 shrink-0">▸</span>
+                  <span>Reduced slow database queries by 45% across large datasets using eager loading (<code class="text-xs text-zinc-200 font-mono">with()</code>) and strategic composite MySQL indexing.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-400 shrink-0">▸</span>
+                  <span>Integrated third-party payment gateways (Stripe Connect, PayPal API) and automated webhook dispatch listeners with verification signatures.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-400 shrink-0">▸</span>
+                  <span>Constructed responsive user interfaces using Tailwind CSS, Bootstrap, and HTML5, ensuring sub-second visual renders and seamless mobile parity.</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Role 2 -->
+            <div class="reveal-init delay-100 relative pl-8 border-l-2 border-indigo-500/60 space-y-3">
+              <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-indigo-400 border-4 border-[#080915] shadow-md shadow-indigo-500/50"></div>
+              
+              <div class="flex flex-wrap items-baseline justify-between gap-2">
+                <h3 class="text-lg font-bold text-white">Junior Web Developer &amp; Laravel Intern</h3>
+                <span class="text-xs font-mono text-indigo-300 bg-indigo-950/60 border border-indigo-500/40 px-2.5 py-0.5 rounded">2023 — 2024</span>
+              </div>
+
+              <div class="text-xs font-semibold text-indigo-400">Innovate Digital Studio · Web Services</div>
+
+              <p class="text-sm text-zinc-300 leading-relaxed">
+                Collaborated in an agile sprint environment developing custom PHP and Laravel web projects with Bootstrap and CSS:
+              </p>
+
+              <ul class="space-y-2 text-sm text-zinc-300">
+                <li class="flex items-start gap-2">
+                  <span class="text-indigo-400 shrink-0">▸</span>
+                  <span>Engineered dynamic CRUD modules, database migration scripts, and seeders for e-commerce and internal enterprise portals in PHP and Laravel.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-indigo-400 shrink-0">▸</span>
+                  <span>Developed frontend responsive templates utilizing HTML5, CSS3, Bootstrap 5, and Tailwind CSS following design mockups.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-indigo-400 shrink-0">▸</span>
+                  <span>Assisted with code reviews, bug fixes, automated validation tests, and Git merge workflows across a 6-developer team.</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Client Testimonials & Card Carousel Section -->
+      <section id="testimonials" class="py-16 md:py-24 border-b border-white/10 colorful-section-dark relative overflow-hidden">
+        <!-- Ambient decorative lighting -->
+        <div class="animate-aurora-2 absolute top-10 right-10 w-96 h-96 bg-cyan-600/15 rounded-full blur-[110px] pointer-events-none"></div>
+        <div class="animate-aurora-1 absolute bottom-10 left-10 w-96 h-96 bg-emerald-600/15 rounded-full blur-[110px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          
+          <!-- Section Heading -->
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 reveal-init">
+            <div class="max-w-3xl">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 mb-3 shadow-sm">
+                <svg class="w-3.5 h-3.5 text-amber-400 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <span>VERIFIED CLIENT REVIEWS &amp; ENDORSEMENTS</span>
+              </div>
+              <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-white" style="text-wrap: balance;">
+                Trusted by Engineering Leads, CTOs &amp; Founders
+              </h2>
+              <p class="mt-2.5 text-sm sm:text-base text-zinc-300 leading-relaxed max-w-2xl">
+                Real feedback from engineering stakeholders on production Laravel, PHP, MySQL, and modern responsive UI projects delivered by Mansoor Ali.
+              </p>
+            </div>
+
+            <!-- Carousel Controls Bar -->
+            <div class="flex items-center gap-3 shrink-0 self-start md:self-end">
+              <div class="hidden sm:flex items-center gap-1.5 text-xs font-mono text-zinc-300 bg-white/5 border border-white/10 px-3.5 py-2 rounded-lg">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>Review <strong id="testimonial-current-index" class="text-white">1 / 5</strong></span>
+              </div>
+
+              <!-- Navigation Prev/Next Buttons -->
+              <div class="flex items-center gap-2">
+                <button id="testimonial-prev" type="button" aria-label="Previous testimonial" class="w-10 h-10 rounded-lg bg-zinc-900/90 border border-white/15 text-zinc-300 hover:text-white hover:bg-emerald-500/20 hover:border-emerald-500/50 flex items-center justify-center transition-all shadow-md active:scale-95" title="Previous review">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+                </button>
+                <button id="testimonial-next" type="button" aria-label="Next testimonial" class="w-10 h-10 rounded-lg bg-zinc-900/90 border border-white/15 text-zinc-300 hover:text-white hover:bg-emerald-500/20 hover:border-emerald-500/50 flex items-center justify-center transition-all shadow-md active:scale-95" title="Next review">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Main Card Container -->
+          <div class="mt-8 reveal-init">
+            <div id="testimonials-card-container" class="min-h-[340px]">
+              <!-- Dynamically rendered with rich slide data -->
+            </div>
+
+            <!-- Dots Indicator & Autoplay Status -->
+            <div class="mt-6 flex flex-wrap items-center justify-between gap-4">
+              <div id="testimonial-dots" class="flex items-center gap-2">
+                <!-- Dots populated by JavaScript -->
+              </div>
+
+              <div class="flex items-center gap-3 text-xs text-zinc-400 font-mono">
+                <span class="inline-flex items-center gap-1.5 bg-emerald-950/40 border border-emerald-500/30 text-emerald-300 px-2.5 py-1 rounded">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+                  <span>Autoplay Active (Hover to pause)</span>
+                </span>
+                <span class="hidden md:inline text-zinc-400">· Use ← / → keys or swipe</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Jump Thumbnail Selector -->
+          <div class="mt-10 pt-8 border-t border-white/10 reveal-init">
+            <div class="text-xs font-semibold uppercase tracking-wider text-zinc-300 mb-3">
+              Direct Access by Client &amp; Project
+            </div>
+            <div id="testimonial-thumbs" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
+              
+              <button type="button" data-thumb-index="0" class="testimonial-thumb active text-left p-3.5 rounded-xl bg-zinc-900/70 border border-white/10 hover:border-emerald-500/50 transition-all group">
+                <div class="flex items-center gap-2 mb-1">
+                  <div class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-[10px] font-bold font-mono flex items-center justify-center">HT</div>
+                  <span class="text-xs font-bold text-white group-hover:text-emerald-400 transition-colors truncate">Haris Tariq</span>
+                </div>
+                <div class="text-[11px] text-zinc-300 truncate">OmniCart Pro</div>
+                <div class="text-[10px] text-emerald-400/90 font-mono mt-1">VP of Engineering</div>
+              </button>
+
+              <button type="button" data-thumb-index="1" class="testimonial-thumb text-left p-3.5 rounded-xl bg-zinc-900/70 border border-white/10 hover:border-emerald-500/50 transition-all group">
+                <div class="flex items-center gap-2 mb-1">
+                  <div class="w-6 h-6 rounded-full bg-cyan-500/20 text-cyan-400 text-[10px] font-bold font-mono flex items-center justify-center">ZA</div>
+                  <span class="text-xs font-bold text-white group-hover:text-cyan-400 transition-colors truncate">Zain Ahmed</span>
+                </div>
+                <div class="text-[11px] text-zinc-300 truncate">FleetPulse Tracker</div>
+                <div class="text-[10px] text-cyan-400/90 font-mono mt-1">Senior Product Lead</div>
+              </button>
+
+              <button type="button" data-thumb-index="2" class="testimonial-thumb text-left p-3.5 rounded-xl bg-zinc-900/70 border border-white/10 hover:border-emerald-500/50 transition-all group">
+                <div class="flex items-center gap-2 mb-1">
+                  <div class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-[10px] font-bold font-mono flex items-center justify-center">AK</div>
+                  <span class="text-xs font-bold text-white group-hover:text-purple-400 transition-colors truncate">Dr. Amina Khan</span>
+                </div>
+                <div class="text-[11px] text-zinc-300 truncate">CarePulse Health</div>
+                <div class="text-[10px] text-purple-400/90 font-mono mt-1">Clinical Director</div>
+              </button>
+
+              <button type="button" data-thumb-index="3" class="testimonial-thumb text-left p-3.5 rounded-xl bg-zinc-900/70 border border-white/10 hover:border-emerald-500/50 transition-all group">
+                <div class="flex items-center gap-2 mb-1">
+                  <div class="w-6 h-6 rounded-full bg-indigo-500/20 text-indigo-400 text-[10px] font-bold font-mono flex items-center justify-center">DE</div>
+                  <span class="text-xs font-bold text-white group-hover:text-indigo-400 transition-colors truncate">David Evans</span>
+                </div>
+                <div class="text-[11px] text-zinc-300 truncate">ApexLedger SaaS</div>
+                <div class="text-[10px] text-indigo-400/90 font-mono mt-1">Chief Technology Officer</div>
+              </button>
+
+              <button type="button" data-thumb-index="4" class="testimonial-thumb text-left p-3.5 rounded-xl bg-zinc-900/70 border border-white/10 hover:border-emerald-500/50 transition-all group">
+                <div class="flex items-center gap-2 mb-1">
+                  <div class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-[10px] font-bold font-mono flex items-center justify-center">TM</div>
+                  <span class="text-xs font-bold text-white group-hover:text-amber-400 transition-colors truncate">Tariq Mehmood</span>
+                </div>
+                <div class="text-[11px] text-zinc-300 truncate">SwiftCourier Console</div>
+                <div class="text-[10px] text-amber-400/90 font-mono mt-1">Operations Director</div>
+              </button>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Resume Overview & Modal Trigger Section -->
+      <section id="resume" class="py-16 md:py-24 border-b border-white/10 colorful-section-accent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="reveal-init bg-gradient-to-r from-[#171b38] via-[#10142b] to-[#1e1329] border border-white/15 rounded-2xl p-8 sm:p-12 relative overflow-hidden shadow-2xl">
+            
+            <div class="relative z-10 max-w-2xl space-y-4">
+              <span class="text-xs font-bold uppercase tracking-wider text-emerald-400">Professional Curriculum Vitae</span>
+              
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-white">
+                Detailed Resume &amp; Technical Qualifications
+              </h2>
+
+              <p class="text-sm sm:text-base text-zinc-300 leading-relaxed">
+                View Mansoor Ali's complete professional resume featuring proven competencies in <strong class="text-emerald-400">HTML, CSS, Bootstrap, Tailwind CSS, PHP, and Laravel</strong>, accompanied by degree credentials and verified project achievements.
+              </p>
+
+              <div class="pt-4 flex flex-wrap items-center gap-3">
+                <button type="button" class="open-resume-btn px-5 py-2.5 text-sm font-bold text-zinc-950 bg-gradient-to-r from-emerald-400 to-teal-300 rounded-md hover:from-emerald-300 hover:to-teal-200 transition-all inline-flex items-center gap-2 shadow-lg shadow-emerald-500/25">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                  <span>Open Fullscreen Resume</span>
+                </button>
+
+                <button type="button" class="open-resume-btn px-4 py-2.5 text-sm font-semibold text-zinc-200 bg-zinc-800 border border-zinc-700 rounded-md hover:bg-zinc-700 hover:text-white transition-colors inline-flex items-center gap-2">
+                  <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+                  <span>Print / Download PDF</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Ambient background corner glow -->
+            <div class="hidden lg:block absolute -right-6 -bottom-6 w-80 h-80 bg-emerald-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Contact & Inquiry Section -->
+      <section id="contact" class="py-16 md:py-24 colorful-hero-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            
+            <!-- Left Info Column -->
+            <div class="reveal-init lg:col-span-5 space-y-6">
+              <div>
+                <h2 class="text-xs font-semibold uppercase tracking-wider text-emerald-400">Get In Touch</h2>
+                <p class="mt-2 text-2xl sm:text-3xl font-extrabold text-white" style="text-wrap: balance;">
+                  Let's collaborate on your next web application or engineering project.
+                </p>
+              </div>
+
+              <p class="text-sm text-zinc-300 leading-relaxed">
+                Whether you need a dedicated Full Stack Laravel Developer for a full-time position, a contract backend engineer for a SaaS product, or API development, I'm ready to contribute immediately.
+              </p>
+
+              <!-- Direct Contact Details -->
+              <div class="space-y-4 pt-2">
+                
+                <div class="flex items-center gap-3 p-3.5 bg-[#0e1124]/90 border border-white/10 rounded-xl shadow-lg">
+                  <div class="w-10 h-10 rounded-lg bg-emerald-500/20 flex items-center justify-center text-emerald-400 shrink-0 border border-emerald-500/30">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="text-[11px] text-zinc-400 uppercase tracking-wider font-mono">Direct Email</div>
+                    <div class="text-sm font-semibold text-white truncate">killerdon3942@gmail.com</div>
+                  </div>
+                  <button type="button" class="copy-email-btn text-xs text-emerald-300 hover:text-white font-semibold px-3 py-1.5 bg-emerald-950/60 border border-emerald-500/40 rounded-md transition-colors whitespace-nowrap">
+                    Copy
+                  </button>
+                </div>
+
+                <div class="flex items-center gap-3 p-3.5 bg-[#0e1124]/90 border border-white/10 rounded-xl shadow-lg">
+                  <div class="w-10 h-10 rounded-lg bg-indigo-500/20 flex items-center justify-center text-indigo-400 shrink-0 border border-indigo-500/30">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  </div>
+                  <div>
+                    <div class="text-[11px] text-zinc-400 uppercase tracking-wider font-mono">Response Time</div>
+                    <div class="text-sm font-semibold text-white">Under 12 hours guaranteed</div>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-3 p-3.5 bg-[#0e1124]/90 border border-white/10 rounded-xl shadow-lg">
+                  <div class="w-10 h-10 rounded-lg bg-cyan-500/20 flex items-center justify-center text-cyan-400 shrink-0 border border-cyan-500/30">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
+                  </div>
+                  <div>
+                    <div class="text-[11px] text-zinc-400 uppercase tracking-wider font-mono">Availability</div>
+                    <div class="text-sm font-semibold text-white">Remote Worldwide &amp; Full-time</div>
+                  </div>
+                </div>
+
+                <!-- GitHub Profile Card -->
+                <div class="flex items-center gap-3 p-3.5 bg-[#0e1124]/90 border border-white/10 rounded-xl shadow-lg">
+                  <div class="w-10 h-10 rounded-lg bg-zinc-800 flex items-center justify-center text-zinc-200 shrink-0 border border-zinc-700">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="text-[11px] text-zinc-400 uppercase tracking-wider font-mono">GitHub Profile</div>
+                    <a href="https://github.com/MansoorAli-Dev" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-white hover:text-emerald-400 transition-colors truncate block">
+                      github.com/MansoorAli-Dev
+                    </a>
+                  </div>
+                  <button type="button" class="copy-github-btn text-xs text-zinc-300 hover:text-white font-semibold px-3 py-1.5 bg-zinc-800 border border-zinc-700 rounded-md transition-colors whitespace-nowrap">
+                    Copy
+                  </button>
+                </div>
+
+                <!-- LinkedIn Profile Card -->
+                <div class="flex items-center gap-3 p-3.5 bg-[#0e1124]/90 border border-white/10 rounded-xl shadow-lg">
+                  <div class="w-10 h-10 rounded-lg bg-sky-950/60 flex items-center justify-center text-sky-400 shrink-0 border border-sky-500/40">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="text-[11px] text-zinc-400 uppercase tracking-wider font-mono">LinkedIn Profile</div>
+                    <a href="https://linkedin.com/in/devmansoor" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-white hover:text-cyan-400 transition-colors truncate block">
+                      linkedin.com/in/devmansoor
+                    </a>
+                  </div>
+                  <button type="button" class="copy-linkedin-btn text-xs text-cyan-300 hover:text-white font-semibold px-3 py-1.5 bg-sky-950/60 border border-sky-500/40 rounded-md transition-colors whitespace-nowrap">
+                    Copy
+                  </button>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Right Interactive Form Column -->
+            <div class="reveal-init delay-100 lg:col-span-7">
+              <div class="bg-gradient-to-b from-[#13172e] to-[#0c0e1e] border border-white/15 rounded-2xl p-6 sm:p-8 shadow-2xl">
+                <h3 class="text-lg font-bold text-white mb-1">Send a Message</h3>
+                <p class="text-xs text-zinc-400 mb-6">Fill out the brief details below and I will respond to your email promptly.</p>
+
+                <form id="contact-form" class="space-y-4">
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                      <label for="contact-name" class="block text-xs font-semibold text-zinc-300 mb-1.5">Your Name *</label>
+                      <input 
+                        type="text" 
+                        id="contact-name" 
+                        required 
+                        placeholder="e.g. John Miller" 
+                        class="w-full px-3.5 py-2.5 bg-[#080a14] border border-white/10 rounded-md text-sm text-white placeholder-zinc-500 focus:outline-none focus:border-emerald-400 transition-colors"
+                      />
+                    </div>
+                    <div>
+                      <label for="contact-email" class="block text-xs font-semibold text-zinc-300 mb-1.5">Your Email *</label>
+                      <input 
+                        type="email" 
+                        id="contact-email" 
+                        required 
+                        placeholder="john@company.com" 
+                        class="w-full px-3.5 py-2.5 bg-[#080a14] border border-white/10 rounded-md text-sm text-white placeholder-zinc-500 focus:outline-none focus:border-emerald-400 transition-colors"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label for="contact-type" class="block text-xs font-semibold text-zinc-300 mb-1.5">Project Scope / Engagement Type</label>
+                    <select 
+                      id="contact-type" 
+                      class="w-full px-3.5 py-2.5 bg-[#080a14] border border-white/10 rounded-md text-sm text-white focus:outline-none focus:border-emerald-400 transition-colors"
+                    >
+                      <option value="Full-time Laravel Developer Role">Full-time Laravel Developer Position</option>
+                      <option value="Contract / SaaS Platform Development">Contract / SaaS Platform Build</option>
+                      <option value="RESTful API & Database Engineering">RESTful API &amp; Database Architecture</option>
+                      <option value="Frontend Responsive UI with Tailwind">Frontend Responsive UI (Tailwind / Bootstrap)</option>
+                      <option value="General Technical Inquiry">Other / Technical Consultation</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label for="contact-message" class="block text-xs font-semibold text-zinc-300 mb-1.5">Message / Requirements *</label>
+                    <textarea 
+                      id="contact-message" 
+                      rows="4" 
+                      required 
+                      placeholder="Describe your project, team requirements, or role details..." 
+                      class="w-full px-3.5 py-2.5 bg-[#080a14] border border-white/10 rounded-md text-sm text-white placeholder-zinc-500 focus:outline-none focus:border-emerald-400 transition-colors"
+                    ></textarea>
+                  </div>
+
+                  <button 
+                    type="submit" 
+                    id="contact-submit-btn" 
+                    class="w-full py-3 px-4 bg-gradient-to-r from-emerald-500 to-teal-400 hover:from-emerald-400 hover:to-teal-300 text-zinc-950 font-bold text-sm rounded-md transition-all flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/20"
+                  >
+                    <span>Send Project Inquiry</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                  </button>
+
+                  <div id="form-status-message" class="hidden"></div>
+                </form>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 bg-[#06070e] py-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div>
+          <div class="text-sm font-bold text-white flex items-center gap-2">
+            <span>Dev Mansoor</span>
+            <span class="text-emerald-400 font-mono text-xs">· Full Stack Web Developer</span>
+          </div>
+          <p class="text-xs text-zinc-400 mt-0.5">Specializing in HTML, CSS, Bootstrap, Tailwind CSS, PHP, and Laravel</p>
+        </div>
+
+        <div class="flex items-center gap-6 text-xs text-zinc-400">
+          <a href="#about" class="hover:text-white transition-colors">About</a>
+          <a href="#stats-dashboard" class="hover:text-emerald-400 transition-colors">Stats</a>
+          <a href="#skills" class="hover:text-white transition-colors">Core Skills</a>
+          <a href="#projects" class="hover:text-white transition-colors">Projects</a>
+          <a href="https://github.com/MansoorAli-Dev" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-1">
+            <span>GitHub</span>
+          </a>
+          <a href="https://linkedin.com/in/devmansoor" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400 transition-colors flex items-center gap-1">
+            <span>LinkedIn</span>
+          </a>
+          <button type="button" class="open-resume-btn hover:text-white transition-colors">Resume</button>
+        </div>
+
+        <div class="text-xs text-zinc-500 font-mono">
+          &copy; 2026 Dev Mansoor. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Interactive Project Details Lightbox Modal -->
+    <div id="project-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
+      <div id="project-modal-backdrop" class="fixed inset-0 bg-black/85 backdrop-blur-md transition-opacity"></div>
+      
+      <div class="relative bg-[#0e1124] border border-white/20 rounded-xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl z-10">
+        
+        <!-- Modal Top Bar -->
+        <div class="sticky top-0 bg-[#0e1124]/95 backdrop-blur-md px-6 py-4 border-b border-white/10 flex items-center justify-between z-20">
+          <div>
+            <span id="modal-project-category" class="text-xs font-mono text-emerald-400 font-semibold">Category</span>
+            <h3 id="modal-project-title" class="text-lg font-bold text-white mt-0.5">Project Title</h3>
+          </div>
+          <button id="project-modal-close" type="button" aria-label="Close modal" class="p-1.5 text-zinc-400 hover:text-white hover:bg-zinc-800 rounded-md transition-colors">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+
+        <div class="p-6 space-y-6">
+          <!-- Project Preview Image -->
+          <div class="aspect-video w-full rounded-lg overflow-hidden bg-zinc-950 border border-white/10">
+            <img id="modal-project-image" src="" alt="Project Visual Preview" class="w-full h-full object-cover" referrerpolicy="no-referrer" />
+          </div>
+
+          <!-- Quick Metrics Bar -->
+          <div id="modal-project-metrics" class="grid grid-cols-2 sm:grid-cols-4 gap-3"></div>
+
+          <!-- Metadata row -->
+          <div class="flex flex-wrap gap-y-2 gap-x-6 text-xs text-zinc-300 py-3 border-y border-white/10">
+            <div>
+              <span class="text-zinc-500">Timeline:</span>
+              <span id="modal-project-timeline" class="text-white ml-1 font-mono"></span>
+            </div>
+            <div>
+              <span class="text-zinc-500">Role:</span>
+              <span id="modal-project-role" class="text-white ml-1"></span>
+            </div>
+          </div>
+
+          <!-- Project Overview -->
+          <div>
+            <h4 class="text-xs font-bold uppercase tracking-wider text-zinc-300 mb-2">Project Overview</h4>
+            <p id="modal-project-overview" class="text-sm text-zinc-300 leading-relaxed"></p>
+          </div>
+
+          <!-- Key Architectural Highlights -->
+          <div>
+            <h4 class="text-xs font-bold uppercase tracking-wider text-zinc-300 mb-2">Engineering &amp; Architecture Highlights</h4>
+            <ul id="modal-project-architecture" class="space-y-2.5"></ul>
+          </div>
+
+          <!-- Tech Stack Tags -->
+          <div>
+            <h4 class="text-xs font-bold uppercase tracking-wider text-zinc-300 mb-2">Technologies Used</h4>
+            <div id="modal-project-stack" class="flex flex-wrap gap-2"></div>
+          </div>
+
+          <!-- Action bar in modal -->
+          <div class="pt-4 border-t border-white/10 flex items-center justify-between">
+            <span class="text-xs text-zinc-300">Interested in this tech implementation?</span>
+            <a href="#contact" class="text-xs font-bold text-zinc-950 bg-gradient-to-r from-emerald-400 to-teal-300 hover:from-emerald-300 hover:to-teal-200 px-4 py-2 rounded-md transition-all shadow-md shadow-emerald-500/20" onclick="document.getElementById('project-modal').classList.add('hidden'); document.body.style.overflow='';">
+              Inquire About Project
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Interactive Resume Modal (Printable & Screen View) -->
+    <div id="resume-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-3 sm:p-6 overflow-y-auto">
+      <div id="resume-modal-backdrop" class="fixed inset-0 bg-black/85 backdrop-blur-md transition-opacity"></div>
+
+      <div class="relative bg-[#0e1124] border border-white/20 rounded-xl max-w-4xl w-full max-h-[92vh] overflow-y-auto shadow-2xl z-10">
+        
+        <!-- Header controls -->
+        <div class="sticky top-0 bg-[#0e1124]/95 backdrop-blur-md px-6 py-4 border-b border-white/10 flex items-center justify-between z-20">
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            <span class="text-sm font-bold text-white">Mansoor Ali — Professional Resume</span>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <button id="print-resume-btn" type="button" class="px-3 py-1.5 text-xs font-semibold text-zinc-200 bg-zinc-800 hover:bg-zinc-700 hover:text-white rounded-md transition-colors inline-flex items-center gap-1.5 border border-white/10">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+              <span>Print / Save as PDF</span>
+            </button>
+
+            <button id="copy-resume-text-btn" type="button" class="px-3 py-1.5 text-xs font-semibold text-zinc-200 bg-zinc-800 hover:bg-zinc-700 hover:text-white rounded-md transition-colors inline-flex items-center gap-1.5 border border-white/10">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2z"/></svg>
+              <span>Copy Text</span>
+            </button>
+
+            <button id="resume-modal-close" type="button" aria-label="Close resume modal" class="p-1.5 text-zinc-400 hover:text-white hover:bg-zinc-800 rounded-md transition-colors ml-1">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Printable & Viewable Document Body -->
+        <div id="resume-printable-area" class="p-6 sm:p-10 space-y-8 bg-[#101328] text-zinc-200">
+          
+          <!-- Resume Header Lockup -->
+          <div class="border-b border-white/10 pb-6 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+            <div>
+              <h1 class="text-3xl font-black tracking-tight text-white">DEV MANSOOR (MANSOOR ALI)</h1>
+              <p class="text-sm font-bold text-emerald-400 mt-1">Full Stack Web Developer · Laravel, PHP &amp; Modern UI Specialist</p>
+            </div>
+            <div class="text-xs text-zinc-300 sm:text-right space-y-1 font-mono">
+              <div>Email: killerdon3942@gmail.com</div>
+              <div>GitHub: <a href="https://github.com/MansoorAli-Dev" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline">github.com/MansoorAli-Dev</a></div>
+              <div>LinkedIn: <a href="https://linkedin.com/in/devmansoor" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">linkedin.com/in/devmansoor</a></div>
+              <div>Experience: 2+ Years Production · Remote Worldwide</div>
+            </div>
+          </div>
+
+          <!-- Professional Summary -->
+          <div class="space-y-2">
+            <h2 class="text-xs font-bold uppercase tracking-wider text-emerald-400">Professional Summary</h2>
+            <p class="text-sm text-zinc-300 leading-relaxed">
+              Results-driven Full Stack Web Developer specializing in building scalable, secure, and dynamic web applications with Laravel, PHP, and modern web frameworks. Possesses 2+ years of production experience implementing high-performance backends, RESTful APIs, relational database architectures in MySQL, and responsive user interfaces with HTML, CSS, Bootstrap, and Tailwind CSS.
+            </p>
+          </div>
+
+          <!-- Core Competencies with prominent placement of all 6 requested skills -->
+          <div class="space-y-3">
+            <h2 class="text-xs font-bold uppercase tracking-wider text-emerald-400">Core Technical Competencies</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+              <div class="p-3 bg-[#0a0d1e] border border-white/10 rounded">
+                <span class="font-bold text-white block mb-1">Backend &amp; Frameworks:</span>
+                <span class="text-zinc-300"><strong class="text-indigo-400">PHP (8.0 - 8.3)</strong>, <strong class="text-rose-400">Laravel (10 &amp; 11)</strong>, Eloquent ORM, MVC Architecture, Queues, Jobs, Artisan Commands, Service-Repository Pattern.</span>
+              </div>
+              <div class="p-3 bg-[#0a0d1e] border border-white/10 rounded">
+                <span class="font-bold text-white block mb-1">Frontend &amp; Responsive UI:</span>
+                <span class="text-zinc-300"><strong class="text-orange-400">HTML &amp; HTML5</strong>, <strong class="text-blue-400">CSS &amp; CSS3</strong>, <strong class="text-purple-400">Bootstrap (4 &amp; 5)</strong>, <strong class="text-cyan-400">Tailwind CSS</strong>, JavaScript (ES6+), Blade Components.</span>
+              </div>
+              <div class="p-3 bg-[#0a0d1e] border border-white/10 rounded">
+                <span class="font-bold text-white block mb-1">Database &amp; Caching:</span>
+                <span class="text-zinc-300">MySQL 8.0 (Schema Modeling, Query Tuning, Indexing, Transactions), Redis Caching, Model Seeders.</span>
+              </div>
+              <div class="p-3 bg-[#0a0d1e] border border-white/10 rounded">
+                <span class="font-bold text-white block mb-1">APIs &amp; DevOps:</span>
+                <span class="text-zinc-300">RESTful API Engineering, Stripe Connect, Twilio SMS, Git/GitHub, Docker, Linux, Postman.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Professional Work History -->
+          <div class="space-y-5">
+            <h2 class="text-xs font-bold uppercase tracking-wider text-emerald-400">Professional Work Experience</h2>
+            
+            <div class="space-y-2">
+              <div class="flex flex-wrap items-baseline justify-between gap-1">
+                <h3 class="text-sm font-bold text-white">Full Stack Laravel Developer — Apex Solutions / Tech Labs</h3>
+                <span class="text-xs font-mono text-zinc-300">2024 — Present</span>
+              </div>
+              <div class="text-xs text-emerald-400 font-semibold italic">Remote &amp; Contract Deployments</div>
+              <ul class="space-y-1.5 text-xs text-zinc-300 pl-4 list-disc marker:text-emerald-500">
+                <li>Architected and shipped 10+ custom Laravel web applications and robust REST APIs using PHP, MySQL, and Tailwind CSS.</li>
+                <li>Reduced slow database query bottlenecks by 45% using eager loading (<code class="font-mono text-zinc-200">with()</code>) and strategic MySQL indexing.</li>
+                <li>Implemented real-time asynchronous background queues for mail, reports, and payments using Redis and Laravel Horizon.</li>
+                <li>Constructed responsive mobile-first UI components using Tailwind CSS and Bootstrap, ensuring high accessibility and rapid load times.</li>
+              </ul>
+            </div>
+
+            <div class="space-y-2 pt-3 border-t border-white/10">
+              <div class="flex flex-wrap items-baseline justify-between gap-1">
+                <h3 class="text-sm font-bold text-white">Junior Web Developer &amp; Laravel Intern — Innovate Digital Studio</h3>
+                <span class="text-xs font-mono text-zinc-300">2023 — 2024</span>
+              </div>
+              <div class="text-xs text-indigo-400 font-semibold italic">Full-Time On-Site</div>
+              <ul class="space-y-1.5 text-xs text-zinc-300 pl-4 list-disc marker:text-indigo-400">
+                <li>Developed dynamic CRUD modules, user authentication systems, and database schema migrations in PHP and Laravel.</li>
+                <li>Engineered responsive frontend interfaces using HTML, CSS, Bootstrap, and Tailwind CSS adhering to client specifications.</li>
+                <li>Integrated third-party REST APIs and debugged backend application logic using Laravel Telescope.</li>
+                <li>Maintained clean version control with Git and participated actively in agile team sprints.</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- Education -->
+          <div class="space-y-3 pt-3 border-t border-white/10">
+            <h2 class="text-xs font-bold uppercase tracking-wider text-emerald-400">Education &amp; Credentials</h2>
+            <div class="flex items-start justify-between text-xs">
+              <div>
+                <div class="font-bold text-white">Bachelor of Science in Computer Science (BSCS)</div>
+                <div class="text-zinc-400">Accredited University · Software Engineering &amp; Database Systems Focus</div>
+              </div>
+              <span class="font-mono text-zinc-300">Completed</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Script Entry Point (Pure Vanilla JavaScript, No React, No TS) -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
