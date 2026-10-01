@@ -12,14 +12,43 @@
     overflow-x: hidden;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   }
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
   max-width: 100%;
+}
+
+/* Mobile Menu Smooth Slide & Fade Animation with !important */
+#mobile-menu {
+  max-height: 0 !important;
+  opacity: 0 !important;
+  overflow: hidden !important;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease-in-out, padding 0.3s ease-in-out, border-width 0.3s ease-in-out !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  border-bottom-width: 0px !important;
+}
+
+#mobile-menu.menu-open {
+  max-height: 600px !important;
+  opacity: 1 !important;
+  padding-top: 1rem !important;
+  /* py-4 */
+  padding-bottom: 1rem !important;
+  /* py-4 */
+  border-bottom-width: 1px !important;
+  border-bottom-color: #27272a !important;
+  /* zinc-800 */
 }
 
 /* Preloader styles */
@@ -34,13 +63,23 @@ html, body {
 }
 
 @keyframes atomSpin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes atomSpinReverse {
-  0% { transform: rotate(360deg); }
-  100% { transform: rotate(0deg); }
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .animate-atom-ring-1 {
@@ -57,7 +96,7 @@ html, body {
 
 /* Colorful Animated Background Canvas */
 .colorful-hero-bg {
-  background: 
+  background:
     radial-gradient(ellipse 80% 60% at 50% -20%, rgba(99, 102, 241, 0.28), transparent),
     radial-gradient(circle 500px at 15% 30%, rgba(16, 185, 129, 0.22), transparent),
     radial-gradient(circle 600px at 85% 25%, rgba(244, 63, 94, 0.2), transparent),
@@ -66,14 +105,14 @@ html, body {
 }
 
 .colorful-section-dark {
-  background: 
+  background:
     radial-gradient(circle 600px at 0% 100%, rgba(139, 92, 246, 0.16), transparent),
     radial-gradient(circle 600px at 100% 0%, rgba(16, 185, 129, 0.15), transparent),
     #090a18;
 }
 
 .colorful-section-accent {
-  background: 
+  background:
     radial-gradient(circle 800px at 50% 50%, rgba(99, 102, 241, 0.15), transparent),
     radial-gradient(circle 500px at 90% 80%, rgba(236, 72, 153, 0.15), transparent),
     radial-gradient(circle 500px at 10% 20%, rgba(6, 182, 212, 0.15), transparent),
@@ -99,21 +138,50 @@ html, body {
 }
 
 @keyframes blinkCursor {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
 }
 
 /* Aurora wave animation */
 @keyframes auroraPulse {
-  0% { transform: scale(1) translate(0px, 0px); opacity: 0.4; }
-  50% { transform: scale(1.12) translate(15px, -20px); opacity: 0.7; }
-  100% { transform: scale(1) translate(0px, 0px); opacity: 0.4; }
+  0% {
+    transform: scale(1) translate(0px, 0px);
+    opacity: 0.4;
+  }
+
+  50% {
+    transform: scale(1.12) translate(15px, -20px);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scale(1) translate(0px, 0px);
+    opacity: 0.4;
+  }
 }
 
 @keyframes auroraPulseReverse {
-  0% { transform: scale(1.1) translate(0px, 0px); opacity: 0.5; }
-  50% { transform: scale(0.95) translate(-25px, 20px); opacity: 0.75; }
-  100% { transform: scale(1.1) translate(0px, 0px); opacity: 0.5; }
+  0% {
+    transform: scale(1.1) translate(0px, 0px);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: scale(0.95) translate(-25px, 20px);
+    opacity: 0.75;
+  }
+
+  100% {
+    transform: scale(1.1) translate(0px, 0px);
+    opacity: 0.5;
+  }
 }
 
 .animate-aurora-1 {
@@ -126,8 +194,13 @@ html, body {
 
 /* Infinite Marquee */
 @keyframes marquee {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .marquee-track {
@@ -142,8 +215,15 @@ html, body {
 
 /* Float Animation */
 @keyframes floatSlow {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-8px) rotate(1deg); }
+
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
 }
 
 .animate-float {
@@ -163,10 +243,21 @@ html, body {
   transform: translateY(0);
 }
 
-.delay-100 { transition-delay: 100ms; }
-.delay-200 { transition-delay: 200ms; }
-.delay-300 { transition-delay: 300ms; }
-.delay-400 { transition-delay: 400ms; }
+.delay-100 {
+  transition-delay: 100ms;
+}
+
+.delay-200 {
+  transition-delay: 200ms;
+}
+
+.delay-300 {
+  transition-delay: 300ms;
+}
+
+.delay-400 {
+  transition-delay: 400ms;
+}
 
 /* Interactive Glowing Skill Card */
 .skill-card-glow {
@@ -195,7 +286,19 @@ html, body {
 
 /* Custom Attractive Glow Cursor */
 @media (hover: hover) and (pointer: fine) {
-  body, a, button, input, select, textarea, [role="button"], label, .nav-link, .project-card, .testimonial-card, .cursor-pointer {
+
+  body,
+  a,
+  button,
+  input,
+  select,
+  textarea,
+  [role="button"],
+  label,
+  .nav-link,
+  .project-card,
+  .testimonial-card,
+  .cursor-pointer {
     cursor: none !important;
   }
 
@@ -226,12 +329,12 @@ html, body {
     z-index: 9998;
     transform: translate(-50%, -50%);
     transition: width 0.22s cubic-bezier(0.16, 1, 0.3, 1),
-                height 0.22s cubic-bezier(0.16, 1, 0.3, 1),
-                border-color 0.22s,
-                background-color 0.22s,
-                box-shadow 0.22s,
-                transform 0.15s ease-out,
-                opacity 0.2s;
+      height 0.22s cubic-bezier(0.16, 1, 0.3, 1),
+      border-color 0.22s,
+      background-color 0.22s,
+      box-shadow 0.22s,
+      transform 0.15s ease-out,
+      opacity 0.2s;
   }
 
   .cursor-interactive #custom-cursor-ring {
@@ -283,6 +386,7 @@ html, body {
     opacity: 1;
     border-color: #34d399;
   }
+
   100% {
     transform: translate(-50%, -50%) scale(2.4);
     opacity: 0;
@@ -291,6 +395,7 @@ html, body {
 }
 
 @media (hover: none) or (pointer: coarse) {
+
   #custom-cursor-dot,
   #custom-cursor-ring,
   .cursor-click-ripple {
@@ -346,8 +451,15 @@ html, body {
 }
 
 @keyframes navLineIn {
-  0% { transform: scaleX(0); opacity: 0; }
-  100% { transform: scaleX(1); opacity: 1; }
+  0% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
 }
 
 /* Reduced motion preference */
@@ -357,9 +469,17 @@ html, body {
     transform: none !important;
     transition: none !important;
   }
-  .marquee-track, .animate-float, .animate-aurora-1, .animate-aurora-2, .animate-atom-ring-1, .animate-atom-ring-2, .animate-atom-ring-3 {
+
+  .marquee-track,
+  .animate-float,
+  .animate-aurora-1,
+  .animate-aurora-2,
+  .animate-atom-ring-1,
+  .animate-atom-ring-2,
+  .animate-atom-ring-3 {
     animation: none !important;
   }
+
   .skill-progress-bar {
     transition: none !important;
   }
@@ -370,9 +490,12 @@ html, body {
   body * {
     visibility: hidden;
   }
-  #resume-printable-area, #resume-printable-area * {
+
+  #resume-printable-area,
+  #resume-printable-area * {
     visibility: visible;
   }
+
   #resume-printable-area {
     position: absolute;
     left: 0;
@@ -383,10 +506,14 @@ html, body {
     background: white !important;
     color: black !important;
   }
+
   #resume-printable-area * {
     color: black !important;
   }
-  #resume-modal-close, #print-resume-btn, #copy-resume-text-btn {
+
+  #resume-modal-close,
+  #print-resume-btn,
+  #copy-resume-text-btn {
     display: none !important;
   }
 }

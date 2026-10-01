@@ -637,7 +637,7 @@ function initScrollAnimations() {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('reveal-visible');
-        
+
         const bars = entry.target.querySelectorAll('.skill-progress-bar');
         bars.forEach(bar => {
           const targetWidth = bar.getAttribute('data-target-width') || '90%';
@@ -759,7 +759,7 @@ function initMobileMenu() {
     const isExpanded = toggleBtn.getAttribute('aria-expanded') === 'true';
     toggleBtn.setAttribute('aria-expanded', !isExpanded);
     mobileMenu.classList.toggle('hidden');
-    
+
     const iconOpen = document.getElementById('hamburger-open-icon');
     const iconClose = document.getElementById('hamburger-close-icon');
     if (iconOpen && iconClose) {
@@ -848,7 +848,7 @@ function initProjectModal() {
     document.getElementById('modal-project-timeline').textContent = project.timeline;
     document.getElementById('modal-project-role').textContent = project.role;
     document.getElementById('modal-project-overview').textContent = project.overview;
-    
+
     const imgEl = document.getElementById('modal-project-image');
     if (imgEl) {
       imgEl.src = project.image;
@@ -1137,7 +1137,7 @@ function showToast(message) {
  */
 function initSmoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
       const targetId = this.getAttribute('href');
       if (targetId === '#' || !targetId) return;
 
@@ -1597,4 +1597,27 @@ function initTestimonialsCarousel() {
   // Initialize
   renderTestimonial(0);
   startAutoplay();
+}
+
+
+const menuToggle = document.getElementById('mobile-menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+const openIcon = document.getElementById('hamburger-open-icon');
+const closeIcon = document.getElementById('hamburger-close-icon');
+
+if (menuToggle && mobileMenu) {
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    openIcon.classList.toggle('hidden');
+    closeIcon.classList.toggle('hidden');
+  });
+
+  // Jab bhi koi link click ho, menu band ho jaye
+  document.querySelectorAll('.mobile-nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      openIcon.classList.remove('hidden');
+      closeIcon.classList.add('hidden');
+    });
+  });
 }

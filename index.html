@@ -106,7 +106,7 @@
         <span class="w-2 h-2 rounded-full bg-gradient-to-r from-emerald-400 to-cyan-400 animate-pulse"></span>
       </a>
 
-      <!-- Zone 2: Clean text navigation links with active scrollspy indicators -->
+      <!-- Zone 2: Clean text navigation links with active scrollspy indicators (Desktop Only) -->
       <nav class="hidden md:flex items-center gap-3 lg:gap-5 text-sm font-medium text-zinc-300">
         <a href="#about" class="nav-link">About</a>
         <a href="#stats-dashboard" class="nav-link">Live Stats</a>
@@ -117,12 +117,12 @@
         <a href="#resume" class="nav-link open-resume-btn">Resume</a>
       </nav>
 
-      <!-- Zone 3: 1-2 Primary actions with GitHub, LinkedIn and contact -->
+      <!-- Zone 3: Actions (Desktop & Mobile Responsive) -->
       <div class="flex items-center gap-2.5">
-        <!-- Social Icons for GitHub and LinkedIn -->
+        <!-- Social Icons for GitHub and LinkedIn (Desktop Only) -->
         <a href="https://github.com/MansoorAli-Dev" target="_blank" rel="noopener noreferrer"
           aria-label="GitHub Profile"
-          class="p-2 text-zinc-400 hover:text-white hover:bg-zinc-800/80 rounded-md transition-colors"
+          class="hidden sm:inline-flex p-2 text-zinc-400 hover:text-white hover:bg-zinc-800/80 rounded-md transition-colors"
           title="GitHub Profile">
           <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -131,7 +131,7 @@
         </a>
         <a href="https://linkedin.com/in/devmansoor" target="_blank" rel="noopener noreferrer"
           aria-label="LinkedIn Profile"
-          class="p-2 text-zinc-400 hover:text-cyan-400 hover:bg-zinc-800/80 rounded-md transition-colors"
+          class="hidden sm:inline-flex p-2 text-zinc-400 hover:text-cyan-400 hover:bg-zinc-800/80 rounded-md transition-colors"
           title="LinkedIn Profile">
           <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
             <path
@@ -139,13 +139,14 @@
           </svg>
         </a>
 
+        <!-- Resume & Contact (Desktop Only - inside hamburger for mobile) -->
         <button type="button"
           class="open-resume-btn hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-zinc-200 bg-zinc-900/90 border border-zinc-700/80 rounded-md hover:bg-zinc-800 hover:text-white transition-all whitespace-nowrap shadow-sm">
           <span>Resume</span>
         </button>
 
         <a href="#contact"
-          class="inline-flex items-center justify-center px-3.5 py-1.5 text-xs font-semibold text-zinc-950 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-md hover:from-emerald-300 hover:to-teal-300 transition-all whitespace-nowrap shadow-md shadow-emerald-500/20 font-bold">
+          class="hidden sm:inline-flex items-center justify-center px-3.5 py-1.5 text-xs font-semibold text-zinc-950 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-md hover:from-emerald-300 hover:to-teal-300 transition-all whitespace-nowrap shadow-md shadow-emerald-500/20 font-bold">
           <span>Contact</span>
         </a>
 
@@ -163,29 +164,48 @@
 
     </div>
 
-    <!-- Mobile Dropdown Navigation -->
-    <div id="mobile-menu" class="hidden md:hidden border-b border-zinc-800 bg-[#0d0f1e] px-4 py-4 space-y-2">
+    <!-- Mobile Dropdown Navigation (Simple & 100% Reliable) -->
+    <div id="mobile-menu"
+      class="hidden md:hidden border-b border-zinc-800 bg-[#0d0f1e] px-4 py-4 space-y-2.5 shadow-2xl">
       <a href="#about"
-        class="mobile-nav-link block text-sm font-medium text-zinc-300 hover:text-white py-1.5 px-2 rounded">About</a>
+        class="mobile-nav-link block text-sm font-medium text-zinc-300 hover:text-white py-2 px-2 rounded hover:bg-zinc-800/50 transition-colors">About</a>
       <a href="#stats-dashboard"
-        class="mobile-nav-link block text-sm font-medium text-emerald-400 hover:text-white py-1.5 px-2 rounded">Live
+        class="mobile-nav-link block text-sm font-medium text-emerald-400 hover:text-white py-2 px-2 rounded hover:bg-zinc-800/50 transition-colors">Live
         Dynamic Stats</a>
       <a href="#skills"
-        class="mobile-nav-link block text-sm font-medium text-cyan-400 hover:text-white py-1.5 px-2 rounded">Core
+        class="mobile-nav-link block text-sm font-medium text-cyan-400 hover:text-white py-2 px-2 rounded hover:bg-zinc-800/50 transition-colors">Core
         Skills</a>
       <a href="#projects"
-        class="mobile-nav-link block text-sm font-medium text-zinc-300 hover:text-white py-1.5 px-2 rounded">Projects</a>
+        class="mobile-nav-link block text-sm font-medium text-zinc-300 hover:text-white py-2 px-2 rounded hover:bg-zinc-800/50 transition-colors">Projects</a>
       <a href="#experience"
-        class="mobile-nav-link block text-sm font-medium text-zinc-300 hover:text-white py-1.5 px-2 rounded">Experience</a>
+        class="mobile-nav-link block text-sm font-medium text-zinc-300 hover:text-white py-2 px-2 rounded hover:bg-zinc-800/50 transition-colors">Experience</a>
       <a href="#testimonials"
-        class="mobile-nav-link block text-sm font-medium text-zinc-300 hover:text-white py-1.5 px-2 rounded">Client
+        class="mobile-nav-link block text-sm font-medium text-zinc-300 hover:text-white py-2 px-2 rounded hover:bg-zinc-800/50 transition-colors">Client
         Testimonials</a>
-      <button type="button"
-        class="open-resume-btn mobile-nav-link text-left w-full text-sm font-medium text-emerald-400 hover:text-emerald-300 py-1.5 px-2 rounded">Open
-        Full Resume</button>
-      <a href="#contact"
-        class="mobile-nav-link block text-sm font-medium text-zinc-300 hover:text-white py-1.5 px-2 rounded">Contact
-        Inquiry</a>
+
+      <!-- Moved Actions Inside Mobile Menu -->
+      <div class="pt-3 border-t border-zinc-800 flex flex-col gap-2.5">
+        <div class="flex items-center justify-between px-2 py-1">
+          <span class="text-xs text-zinc-400">Social Profiles:</span>
+          <div class="flex items-center gap-3">
+            <a href="https://github.com/MansoorAli-Dev" target="_blank" rel="noopener noreferrer"
+              class="text-zinc-300 hover:text-white text-xs">GitHub</a>
+            <span class="text-zinc-600">|</span>
+            <a href="https://linkedin.com/in/devmansoor" target="_blank" rel="noopener noreferrer"
+              class="text-zinc-300 hover:text-cyan-400 text-xs">LinkedIn</a>
+          </div>
+        </div>
+
+        <button type="button"
+          class="open-resume-btn mobile-nav-link text-left w-full text-sm font-semibold text-emerald-400 hover:text-emerald-300 py-2.5 px-2.5 rounded-md bg-zinc-900 border border-zinc-800">
+          📄 Open Full Resume
+        </button>
+
+        <a href="#contact"
+          class="mobile-nav-link block text-center text-sm font-bold text-zinc-950 bg-gradient-to-r from-emerald-400 to-teal-400 py-2.5 px-3 rounded-md shadow-md">
+          Get in Touch / Contact
+        </a>
+      </div>
     </div>
   </header>
 
@@ -294,7 +314,7 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
                 </svg>
-                <span>killerdon3942@gmail.com</span>
+                <span>devmansoor0@gmail.com</span>
               </button>
             </div>
 
